@@ -1,0 +1,18 @@
+// Контейнер и оболчки
+.container{
+  @include width_max($width_min, $width_max);
+  @include box-shadow(0 0 87px rgba(142,142,142,.22));
+  background: #ffffff;
+}
+// END Контейнер и оболчки
+
+// error forms element
+select.error, textarea.error, input.inp-txt.error {
+  //border: 1px solid rgba(255,79,79,.79) !important;
+  color: #e92d28 !important;
+  @include placeholder-color(#e92d28);
+}
+input.file.error {
+  color: #e96c68 !important;
+}
+// END error forms element

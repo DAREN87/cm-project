@@ -1,0 +1,281 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever{
+//         @include sized-sprite($icons, badge_hit); //or
+//   @include s(badge_hit); //gets default value for spritemap as $icons
+//     }
+// ### animation example
+//     @include keyframes(rotate) {
+//        from {
+//           @include rotate(0);
+//        }
+//        to {
+//           @include rotate(360);
+//         }
+//     }
+// ## animation usage
+//     body:hover{
+//       @include animation(rotate 200s linear infinite);
+//     }
+// ## animations easing, see easings.net for full list and examples, tnx @ai
+//     transition: all 1.2s ceaser($ease-in);
+// ## gradient example
+//     @include background-image(linear-gradient(#232323, #5c5c5c));
+// ## making bw-images
+//     img{@extend %gray;}
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     @min-screen(320){ css goes here}
+// @max-screen(1000), @iphone5, @iphone4, @ipad-retina, @ipad, @hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3 {
+//       .item-#{$i} { width: 2em * $i; }
+//     }
+//     @each $s in a,b,c{
+//       #{$s}
+//     }
+// BTW these comments will not render into css
+// for awesomeness use .🍺 class. Example:
+// .🍺{beer:everything}
+
+//*{-webkit-transition: .3s all;}
+
+// fonts
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-Thin.woff') format('woff'),
+  url('../fonts/Panton-Thin.ttf')  format('truetype'),
+  url('../fonts/Panton-Thin.svg#Panton-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-ThinItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-ThinItalic.woff') format('woff'),
+  url('../fonts/Panton-ThinItalic.ttf')  format('truetype'),
+  url('../fonts/Panton-ThinItalic.svg#Panton-ThinItalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-ExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-ExtraLight.woff') format('woff'),
+  url('../fonts/Panton-ExtraLight.ttf')  format('truetype'),
+  url('../fonts/Panton-ExtraLight.svg#Panton-ExtraLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-ExtraLightItalic.woff') format('woff'),
+  url('../fonts/Panton-ExtraLightItalic.ttf')  format('truetype'),
+  url('../fonts/Panton-ExtraLightItalic.svg#Panton-ExtraLightItalic') format('svg');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-Light.woff') format('woff'),
+  url('../fonts/Panton-Light.ttf')  format('truetype'),
+  url('../fonts/Panton-Light.svg#Panton-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-LightItalic.woff') format('woff'),
+  url('../fonts/Panton-LightItalic.ttf')  format('truetype'),
+  url('../fonts/Panton-LightItalic.svg#Panton-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-Regular.woff') format('woff'),
+  url('../fonts/Panton-Regular.ttf')  format('truetype'),
+  url('../fonts/Panton-Regular.svg#Panton-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-RegularItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-RegularItalic.woff') format('woff'),
+  url('../fonts/Panton-RegularItalic.ttf')  format('truetype'),
+  url('../fonts/Panton-RegularItalic.svg#Panton-RegularItalic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-SemiBold.woff') format('woff'),
+  url('../fonts/Panton-SemiBold.ttf')  format('truetype'),
+  url('../fonts/Panton-SemiBold.svg#Panton-SemiBold') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-SemiBoldItalic.woff') format('woff'),
+  url('../fonts/Panton-SemiBoldItalic.ttf')  format('truetype'),
+  url('../fonts/Panton-SemiBoldItalic.svg#Panton-SemiBoldItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-Bold.woff') format('woff'),
+  url('../fonts/Panton-Bold.ttf')  format('truetype'),
+  url('../fonts/Panton-Bold.svg#Panton-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-BoldItalic.woff') format('woff'),
+  url('../fonts/Panton-BoldItalic.ttf')  format('truetype'),
+  url('../fonts/Panton-BoldItalic.svg#Panton-BoldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-ExtraBold.woff') format('woff'),
+  url('../fonts/Panton-ExtraBold.ttf')  format('truetype'),
+  url('../fonts/Panton-ExtraBold.svg#Panton-ExtraBold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-ExtraBoldItalic.woff') format('woff'),
+  url('../fonts/Panton-ExtraBoldItalic.ttf')  format('truetype'),
+  url('../fonts/Panton-ExtraBoldItalic.svg#Panton-ExtraBoldItalic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-Black.woff') format('woff'),
+  url('../fonts/Panton-Black.ttf')  format('truetype'),
+  url('../fonts/Panton-Black.svg#Panton-Black') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-BlackItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-BlackItalic.woff') format('woff'),
+  url('../fonts/Panton-BlackItalic.ttf')  format('truetype'),
+  url('../fonts/Panton-BlackItalic.svg#Panton-BlackItalic') format('svg');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-Heavy.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-Heavy.woff') format('woff'),
+  url('../fonts/Panton-Heavy.ttf')  format('truetype'),
+  url('../fonts/Panton-Heavy.svg#Panton-Heavy') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Panton-HeavyItalic.woff') format('woff'),
+  url('../fonts/Panton-HeavyItalic.ttf')  format('truetype'),
+  url('../fonts/Panton-HeavyItalic.svg#Panton-HeavyItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+}
+// END fonts
+
+// variables
+$width_max: 1920px;
+$width_min: 300px;
+
+$default_font_family: Arial, Helvetica, sans-serif ;
+$font_family_A: Arial, Helvetica, sans-serif ;
+$font_family_OS: 'Open Sans', sans-serif;
+$font_family_P: 'Panton';
+$font_family_input: $font_family_OS;
+$font_family_button: $font_family_P;
+
+$name: animated;
+// END variables
+
+//bug fix out of fancybox
+
+//End bug fix out of fancybox
+
+*{margin:0;padding:0; }
+@include iphone{*{-webkit-text-size-adjust: none;}}
+button::-moz-focus-inner { padding: 0; border: 0 }
+input::-moz-focus-inner { border: 0; padding: 0;}
+input[type="submit"]::-moz-focus-inner { padding: 0; border: 0 }
+
+html{
+  font-size: 62.5%;
+}
+body{
+  font: {
+    family: $default_font_family;
+    weight: normal;
+    size: 1.6rem;
+  }
+}
+// resets
+a img,fieldset{
+  border:none;
+}
+input, textarea, button {
+  outline:none;
+  -webkit-appearance: none; /*Safari/Chrome*/
+  -moz-appearance: none; /*Firefox*/
+  -ms-appearance: none; /*IE*/
+  -o-appearance: none; /*Opera*/
+  appearance: none;
+}
+.clearfix{
+  @extend %clr;
+}
+// common styles, these could be attached to any block with "@extend %wyswyg;"
+%wyswyg{
+  p{
+    margin-bottom: 1em;
+  }
+  ul,ol{
+    margin: 1em 2em;
+    list-style: disc;
+  }
+  ol{
+    list-style: decimal;
+  }
+  blockquote{
+    margin: 1em 2em;
+  }
+  table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    td{
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+  }
+}

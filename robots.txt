@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /
+Disallow: /form_action
+Disallow: /img
+Disallow: /css
+Disallow: /js
+Disallow: /sass
