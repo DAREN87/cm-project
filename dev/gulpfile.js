@@ -22,7 +22,7 @@
 
   //compass
   gulp.task('compass', function() {
-    return gulp.src('./sass/*.scss')
+    return gulp.src(['./sass/*.scss', './sass/**/*.css'])
       .pipe(compass({
         config_file: './config.rb',
         css: '../css',
@@ -56,7 +56,7 @@
       .pipe(notify("vendor.js compiled!"));
   });
   gulp.task('scripts-main', function() {
-    return gulp.src(['./js/*.js'])
+    return gulp.src('./js/*.js')
       .pipe(uncomment({removeEmptyLines: true}))
       .pipe(concat('main.min.js'))
       .pipe(uglify())
@@ -67,7 +67,7 @@
 
   //watch
   gulp.task('watch', function() {
-    gulp.watch('./sass/*.scss', ['compass']);
+    gulp.watch(['./sass/*.scss', './sass/**/*.scss'], ['compass']);
     gulp.watch('./js/*.js', ['scripts-main']);
     gulp.watch('./img/*', ['compress']);
   });
