@@ -32,28 +32,17 @@
 }
 @media screen and (max-width: 768px) {
 
-  .form_div_horizontal{
+  .form_horizontal{
     max-width: 300px;
     width: 100%;
     margin: 0 auto;
 
-    .form_div_input{
-      @include input_m;
-    }
-    .button_wrap{
-      width: 100%;
-      display: block;
-      *display: block;
-    }
-    .form_div_button{
+    .form_button{
       @include button_color(100%, 1.5);
       display: block;
-      *display: block;
     }
-    .form_div__label{
-      position: relative;
+    .form_label{
       display: block;
-      *display: block;
       margin: 0 auto 15px auto;
       width: 100%;
 

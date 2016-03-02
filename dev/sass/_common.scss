@@ -1,45 +1,3 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever{
-//         @include sized-sprite($icons, badge_hit); //or
-//   @include s(badge_hit); //gets default value for spritemap as $icons
-//     }
-// ### animation example
-//     @include keyframes(rotate) {
-//        from {
-//           @include rotate(0);
-//        }
-//        to {
-//           @include rotate(360);
-//         }
-//     }
-// ## animation usage
-//     body:hover{
-//       @include animation(rotate 200s linear infinite);
-//     }
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in);
-// ## gradient example
-//     @include background-image(linear-gradient(#232323, #5c5c5c));
-// ## making bw-images
-//     img{@extend %gray;}
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     @min-screen(320){ css goes here}
-// @max-screen(1000), @iphone5, @iphone4, @ipad-retina, @ipad, @hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3 {
-//       .item-#{$i} { width: 2em * $i; }
-//     }
-//     @each $s in a,b,c{
-//       #{$s}
-//     }
-// BTW these comments will not render into css
-// for awesomeness use .🍺 class. Example:
-// .🍺{beer:everything}
-
-//*{-webkit-transition: .3s all;}
-
 // fonts
 @font-face {
   font-family: 'Panton';
@@ -219,10 +177,6 @@ $font_family_button: $font_family_P;
 $name: animated;
 // END variables
 
-//bug fix out of fancybox
-
-//End bug fix out of fancybox
-
 *{margin:0;padding:0; }
 @include iphone{*{-webkit-text-size-adjust: none;}}
 button::-moz-focus-inner { padding: 0; border: 0 }
@@ -245,37 +199,27 @@ a img,fieldset{
 }
 input, textarea, button {
   outline:none;
-  -webkit-appearance: none; /*Safari/Chrome*/
-  -moz-appearance: none; /*Firefox*/
-  -ms-appearance: none; /*IE*/
-  -o-appearance: none; /*Opera*/
   appearance: none;
+}
+.container{
+  @include width_max($width_min, $width_max);
+  box-shadow: 0 0 87px rgba(142,142,142,.22);
+  background: #ffffff;
+}
+select.error, textarea.error, input.inp-txt.error {
+  color: #e51414 !important;
+  @include placeholder-color(#e92d28);
+  border-color: #e51414;
+}
+input.file.error {
+  color: #e51414 !important;
+}
+.errors_block{
+  @include font_mix($font_family_input, 1.2, 400, 1.2, #e51414);
+  position: absolute;
+  right: 20px;
+  bottom: 4px;
 }
 .clearfix{
   @extend %clr;
-}
-// common styles, these could be attached to any block with "@extend %wyswyg;"
-%wyswyg{
-  p{
-    margin-bottom: 1em;
-  }
-  ul,ol{
-    margin: 1em 2em;
-    list-style: disc;
-  }
-  ol{
-    list-style: decimal;
-  }
-  blockquote{
-    margin: 1em 2em;
-  }
-  table{
-    border-spacing: 0;
-    border-collapse: collapse;
-    width: 100%;
-    td{
-      border: 1px solid #ccc;
-      padding: 5px;
-    }
-  }
 }

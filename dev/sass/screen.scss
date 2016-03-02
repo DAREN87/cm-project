@@ -1,7 +1,7 @@
-@import "lib/_base"; // mixins, sprites
-@import "common"; // перменные, сбросы и т.п.
-@import "layouts"; // базовые стили (контейнеры, обертки и прочее)
-@import "main"; // все стили макета
-@import "adaptive"; // адаптивные стили (ширина экранов: 980-758 и 758-524)
-@import "animate"; // файл Animate.css
-@import "plugins";
+@import "media";
+@import "sprites";
+@import "mixins"; //стили кнопок и инпутов
+@import "common"; // шрифты, перменные, сбросы, контейнеры, обертки и т.п.
+@import "main"; // стили макета
+@import "adaptive"; // адаптивные стили
+@import "keyframes";

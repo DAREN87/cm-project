@@ -9,28 +9,28 @@
   margin: 0 auto;
 }
 .no_shadow{
-  @include box-shadow(none);
+  box-shadow: none;
 }
-.form_div_vertical{
+.form_vertical{
   max-width: 300px;
   width: 100%;
   position: relative;
   margin: 0 auto;
  
-  .form_div_input{
+  .form_input{
     @include input_m;
   }
-  .form_div__textarea{
+  .form_textarea{
     @include input_m;
     @include textareas_m;
     display: block;
     height: 110px;
     resize: none;
   }
-  .form_div_button{
+  .form_button{
     @include button_color(100%, 1.5);
   }
-  .form_div__label{
+  .form_label{
     position: relative;
     display: block;
     margin: 0 auto 15px auto;
@@ -41,7 +41,7 @@
     }
   }
 }
-.form_div_horizontal{
+.form_horizontal{
   width: 100%;
   max-width: 670px;
   font-size: 0;
@@ -50,25 +50,20 @@
   margin: 0 auto;
   text-align: center;
 
-  .form_div_input{
+  .form_input{
     @include input_m;
   }
-  .form_div_button{
+  .form_button{
     @include button_color(48.8%, 1.8);
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
     vertical-align: top;
-    //letter-spacing: normal;
     line-height: normal;
   }
-  .form_div__label{
+  .form_label{
     position: relative;
     margin: 0 2% 0 0;
     width: 48.8%;
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
     vertical-align: top;
     letter-spacing: normal;
     line-height: normal;
@@ -83,13 +78,13 @@
   .fancybox-skin {
     position: relative;
     text-shadow: none;
-    @include border-radius(10px);
-    @include background-clip(padding-box);
+    border-radius: 10px;
+    background-clip: padding-box;
     background-color: #fff;
     border: none;
   }
   &.fancybox-opened .fancybox-skin {
-    @include box-shadow(0 0 62px #000);
+    box-shadow: 0 0 62px #000;
   }
 }
 .hidden_form{
@@ -98,7 +93,7 @@
   &.custom{
     max-width: 400px;
     width: 100%;
-    @include box-sizing(border-box);
+    box-sizing: border-box;
     padding: 45px 35px;
     position: relative;
     z-index: 11;
@@ -117,11 +112,11 @@
   width: 100%;
   max-width: 410px;
   padding: 35px 40px;
-  @include border-radius(8px);
-  @include background-clip(padding-box);
-  @include box-sizing(border-box);
+  border-radius: 8px;
+  background-clip: padding-box;
+  box-sizing: border-box;
   background-color: #fff;
-  @include box-shadow(0 0 25px rgba(0,0,0,.2));
+  box-shadow: 0 0 25px rgba(0,0,0,.2);
 
   .form_wrap_p{
     @include font_mix($font_family_P, 1.8, 600, 2.5, #313131);
@@ -131,7 +126,7 @@
       @include font_mix($font_family_P, 2.5, 600, 2.5, #313131);
     }
   }
-  .form_div_vertical{
+  .form_vertical{
     max-width: 100%;
   }
 }
@@ -287,15 +282,15 @@
   .banner_form_wrap{
     float: right;
     width: 40%;
-    @include border-radius(8px);
-    @include background-clip(padding-box);
+    border-radius: 8px;
+    background-clip: padding-box;
     background-color: #fff;
-    @include box-shadow(0 0 25px rgba(0,0,0,.2));
+    box-shadow: 0 0 25px rgba(0,0,0,.2);
     padding-bottom: 30px;
 
     .form_wrap_head{
       padding: 30px 0;
-      @include border-radius(8px 8px 0 0);
+      border-radius: 8px 8px 0 0;
       @include font_mix($font_family_P, 2.4, 400, 2.6, #ffffff);
       text-align: center;
       background: url("../img/form_head_green_bg.jpg") no-repeat bottom right;
@@ -306,9 +301,9 @@
         font-weight: 600;
       }
     }
-    .form_div_vertical{
+    .form_vertical{
       max-width: 100%;
-      @include box-sizing(border-box);
+      box-sizing: border-box;
       padding: 0 15%;
     }
     .form_ul{
@@ -334,7 +329,7 @@
         }
       }
     }
-    .form_div_button{
+    .form_button{
       margin-bottom: 15px;
     }
     .recall{
@@ -363,7 +358,7 @@
     color: #ff0000;
   }
   .green_bg{
-    @include border-radius(8px);
+    border-radius: 8px;
     background-color: #076d7a;
     padding: 0 10px;
   }
@@ -404,10 +399,10 @@
     display: inline-block;
     padding: 7px 4px 7px 10px;
     @include font_mix($font_family_P, 2.4, 600, 2.4, #ffffff);
-    @include border-radius(6px 0 0 6px);
-    @include background-clip(padding-box);
+    border-radius: 6px 0 0 6px;
+    background-clip: padding-box;
     background-color: #0395a7;
-    @include background-image(linear-gradient(top, #009bae 0%, #0190a4 100%));
+    background-image: linear-gradient(top, #009bae 0%, #0190a4 100%);
     position: relative;
     margin-bottom: 50px;
 
@@ -436,10 +431,10 @@
     letter-spacing:normal;
     display: inline-block;
     vertical-align: top;
-    @include border-radius(8px);
-    @include background-clip(padding-box);
+    border-radius: 8px;
+    background-clip: padding-box;
     background-color: #f5f5f5;
-    @include box-shadow(inset 0 -3px 0 #d5d5d5);
+    box-shadow: inset 0 -3px 0 #d5d5d5;
     margin: 0 5.6% 0 0;
     width: 29.6%;
     overflow: hidden;
@@ -449,12 +444,12 @@
     }
     .technique_img{
       width: 100%;
-      @include border-radius(8px 8px 0 0);
+      border-radius: 8px 8px 0 0;
     }
     .technique_head{
       @include font_mix($font_family_OS, 1.7, 800, 2.0, #ffffff);
       background-color: #0395a7;
-      @include background-image(linear-gradient(bottom, #02899d 0%, #059eb0 100%));
+      background-image: linear-gradient(bottom, #02899d 0%, #059eb0 100%);
       display: table;
       height: 114px;
       padding: 0 10px 0 15px;
@@ -528,10 +523,10 @@
     letter-spacing:normal;
     display: inline-block;
     vertical-align: top;
-    @include border-radius(8px);
-    @include background-clip(padding-box);
+    border-radius: 8px;
+    background-clip: padding-box;
     background-color: #fff;
-    @include box-shadow(inset 0 -3px 0 #d5d5d5);
+    box-shadow: inset 0 -3px 0 #d5d5d5;
     margin: 0 1.5% 0 0;
     width: 23.875%;
     padding: 25px 0;
@@ -556,7 +551,7 @@
     .item_prom{
       padding: 10px 0;
       @include font_mix($font_family_OS, 2.0, 800, 2.0, #ff0000);
-      @include text-shadow(0 1px 0 rgba(255,255,255,.35));
+      text-shadow: 0 1px 0 rgba(255,255,255,.35);
       min-height: 20px;
     }
     .item_price{
@@ -579,10 +574,10 @@
     letter-spacing:normal;
     display: inline-block;
     vertical-align: top;
-    @include border-radius(8px);
-    @include background-clip(padding-box);
+    border-radius: 8px;
+    background-clip: padding-box;
     background-color: #fff;
-    @include box-shadow(inset 0 -3px 0 #d5d5d5);
+    box-shadow: inset 0 -3px 0 #d5d5d5;
     margin: 0 6.2% 0 0;
     width: 29.2%;
     padding: 25px 0;
@@ -592,7 +587,7 @@
       margin: 0;
     }
     &.special{
-      @include box-shadow(0 21px 35px rgba(129,138,157,.42));
+      box-shadow: 0 21px 35px rgba(129,138,157,.42);
       background: url("../img/crowns_item_special_bg.png") no-repeat;
       background-size: 100% 100%;
       padding: 24px 0 5px 0;
@@ -601,7 +596,7 @@
         width: 104px;
         height: 1px;
         background-color: #c9c9c9;
-        @include box-shadow(0 1px 0 #fff);
+        box-shadow: 0 1px 0 #fff;
         margin: 0 auto;
       }
       .item_icon_wrap{
@@ -617,7 +612,7 @@
       }
       .item_prom{
         @include font_mix($font_family_OS, 3.0, 700, 3.0, #ffffff);
-        @include text-shadow(none);
+        text-shadow: none;
         min-height: inherit;
         padding: 0;
       }
@@ -648,7 +643,7 @@
     .item_prom{
       padding: 10px 0;
       @include font_mix($font_family_OS, 2.0, 800, 2.0, #ff0000);
-      @include text-shadow(0 1px 0 rgba(255,255,255,.35));
+      text-shadow: 0 1px 0 rgba(255,255,255,.35);
       min-height: 20px;
     }
     .item_price{
@@ -672,10 +667,10 @@
     letter-spacing:normal;
     display: inline-block;
     vertical-align: top;
-    @include border-radius(8px);
-    @include background-clip(padding-box);
+    border-radius: 8px;
+    background-clip: padding-box;
     background-color: #f5f5f5;
-    @include box-shadow(inset 0 -3px 0 #d5d5d5);
+    box-shadow: inset 0 -3px 0 #d5d5d5;
     margin: 0 2.7666% 20px 0;
     width: 22.925%;
     padding: 30px 0;
@@ -691,7 +686,7 @@
       margin-bottom: 0;
     }
     &.special{
-      @include box-shadow(none);
+      box-shadow: none;
       background: url("../img/implants_item_special_bg.png") no-repeat;
       background-size: 100% 100%;
       padding: 30px 0 5px 0;
@@ -706,7 +701,7 @@
       }
       .item_prom{
         @include font_mix($font_family_OS, 3.0, 700, 3.0, #ffffff);
-        @include text-shadow(none);
+        text-shadow: none;
         min-height: inherit;
         padding: 0;
       }
@@ -752,10 +747,10 @@
     letter-spacing:normal;
     display: inline-block;
     vertical-align: top;
-    @include border-radius(8px);
-    @include background-clip(padding-box);
+    border-radius: 8px;
+    background-clip: padding-box;
     background-color: #f5f5f5;
-    @include box-shadow(inset 0 -3px 0 #d5d5d5);
+    box-shadow: inset 0 -3px 0 #d5d5d5;
     margin: 0 6.2% 0 0;
     width: 29.2%;
     padding: 30px 0;
@@ -794,20 +789,20 @@
     margin-top: 0;
   }
   .horizontal_form_wrap{
-    @include border-radius(8px);
-    @include background-clip(padding-box);
+    border-radius: 8px;
+    background-clip: padding-box;
     background-color: #f9f9f9;
-    @include box-shadow(inset 0 -4px 0 #d5d5d5);
+    box-shadow: inset 0 -4px 0 #d5d5d5;
     padding-bottom: 40px;
     text-align: center;
 
     .head_group{
-      @include border-radius(8px 8px 0 0);
-      @include background-clip(padding-box);
+      border-radius: 8px 8px 0 0;
+      background-clip: padding-box;
       background-color: #e1e1e1;
-      @include background-image(linear-gradient(bottom, #078290 0%, #0593a1 100%));
+      background-image: linear-gradient(bottom, #078290 0%, #0593a1 100%);
       padding: 21px 10px;
-      @include box-sizing(border-box);
+      box-sizing: border-box;
       height: 100px;
       margin-bottom: 40px;
     }
@@ -817,7 +812,7 @@
     .form_wrap_after_head{
       @include font_mix($font_family_P, 1.8, 600, 2.9, #ffffff);
     }
-    .form_div_horizontal{
+    .form_horizontal{
       margin-bottom: 35px;
     }
     .form_wrap_bottom_info{
@@ -940,11 +935,11 @@
     float: right;
     width: 44%;
     @include font_mix($font_family_OS, 1.6, 400, 2.0, #333333);
-    @include border-radius(8px);
-    @include background-clip(padding-box);
-    @include box-sizing(border-box);
+    border-radius: 8px;
+    background-clip: padding-box;
+    box-sizing: border-box;
     background-color: #f3f3f3;
-    @include box-shadow(inset 0 -3px 0 rgba(213,213,213,.75));
+    box-shadow: inset 0 -3px 0 rgba(213,213,213,.75);
     padding: 15px 20px;
     margin-top: 34px;
     position: relative;
@@ -969,10 +964,10 @@
     display: inline-block;
     padding: 15px 15px 15px 20px;
     @include font_mix($font_family_P, 3.0, 700, 3.0, #ffffff);
-    @include border-radius(6px 0 0 6px);
-    @include background-clip(padding-box);
+    border-radius: 6px 0 0 6px;
+    background-clip: padding-box;
     background-color: #0395a7;
-    @include background-image(linear-gradient(top, #009bae 0%, #0190a4 100%));
+    background-image: linear-gradient(top, #009bae 0%, #0190a4 100%);
     position: relative;
     margin-bottom: 45px;
 
@@ -1004,15 +999,15 @@
     vertical-align: top;
     margin: 0 5.6% 0 0;
     width: 29.6%;
-    @include border-radius(8px);
-    @include background-clip(padding-box);
+    border-radius: 8px;
+    background-clip: padding-box;
     background-color: #f5f5f5;
-    @include box-shadow(inset 1px 2px 4px rgba(0,0,0,.22));
-    @include background-image(linear-gradient(bottom, #e3e3e3 0%, #f4f4f6 100%));
+    box-shadow: inset 1px 2px 4px rgba(0,0,0,.22);
+    background-image: linear-gradient(bottom, #e3e3e3 0%, #f4f4f6 100%);
     cursor: default;
 
     &:hover{
-      @include box-shadow(0 0 10px rgba(0,0,0,.53), inset 0 1px 4px rgba(255,255,255,.52));
+      box-shadow: 0 0 10px rgba(0,0,0,.53), inset 0 1px 4px rgba(255,255,255,.52);
     }
     &:last-child{
       margin-right: 0;
@@ -1184,7 +1179,7 @@
     float: left;
     width: 60%;
     border: 3px solid rgba(0,0,0,.1);
-    @include border-radius(11px);
+    border-radius: 11px;
 
     .map{
       height: 360px;
@@ -1317,15 +1312,15 @@
   .overall_form_wrap{
     float: right;
     width: 40%;
-    @include border-radius(8px);
-    @include background-clip(padding-box);
+    border-radius: 8px;
+    background-clip: padding-box;
     background-color: #fff;
-    @include box-shadow(0 0 25px rgba(0,0,0,.2));
+    box-shadow: 0 0 25px rgba(0,0,0,.2);
     padding-bottom: 30px;
 
     .form_wrap_head{
       padding: 30px 0;
-      @include border-radius(8px 8px 0 0);
+      border-radius: 8px 8px 0 0;
       @include font_mix($font_family_P, 2.4, 400, 2.6, #ffffff);
       text-align: center;
       background: url("../img/form_head_green_bg.jpg") no-repeat bottom right;
@@ -1336,9 +1331,9 @@
         font-weight: 600;
       }
     }
-    .form_div_vertical{
+    .form_vertical{
       max-width: 100%;
-      @include box-sizing(border-box);
+      box-sizing: border-box;
       padding: 0 15%;
     }
     .form_ul{
@@ -1364,7 +1359,7 @@
         }
       }
     }
-    .form_div_button{
+    .form_button{
       margin-bottom: 15px;
     }
     .recall{
@@ -1377,7 +1372,7 @@
   padding: 50px 0;
 
   .dentists_slider_wrap{
-    @include box-sizing(border-box);
+    box-sizing: border-box;
     position: relative;
     max-width: 1140px;
     padding: 0 90px;
@@ -1388,14 +1383,14 @@
     }
   }
   .dentists_item{
-    @include border-radius(8px);
-    @include background-clip(padding-box);
-    @include box-shadow(inset 0 -3px 0 #d5d5d5);
+    border-radius: 8px;
+    background-clip: padding-box;
+    box-shadow: inset 0 -3px 0 #d5d5d5;
     background: #f9f9f9 url("../img/dentists_info_icon.png") no-repeat bottom right;
 
     .item_img{
       width: 100%;
-      @include border-radius(8px 8px 0 0);
+      border-radius: 8px 8px 0 0;
     }
     .item_info{
       padding: 15px 20px;
@@ -1462,25 +1457,23 @@
 
     .bx-pager-item{
       display: inline-block;
-      *zoom: 1;
-      *display: inline;
     }
     &.bx-default-pager a {
       text-indent: -9999px;
       display: block;
       width: 8px;
       height: 8px;
-      @include border-radius(50%);
-      @include background-clip(padding-box);
+      border-radius: 50%;
+      background-clip: padding-box;
       background-color: #f19b59;
-      @include box-shadow(0 0 0 3px #fff);
+      box-shadow: 0 0 0 3px #fff;
       margin: 0 6px;
       outline: 0;
     }
     &.bx-default-pager a:hover,
     &.bx-default-pager a.active {
       background: #f19b59;
-      @include box-shadow(0 0 0 2px #fff, 0 0 0 3px #f19b59);
+      box-shadow: 0 0 0 2px #fff, 0 0 0 3px #f19b59;
     }
   }
 }
@@ -1524,8 +1517,6 @@
       width: 23px;
       height: 23px;
       cursor: pointer;
-      -webkit-border-radius: 100%;
-      -moz-border-radius: 100%;
       border-radius: 100%;
       border: solid 2px #fff;
       text-align: center;
@@ -1661,7 +1652,7 @@
     float: right;
     width: 410px;
     position: relative;
-    @include box-sizing(border-box);
+    box-sizing: border-box;
 
     &:before{
       content: '';
@@ -1689,7 +1680,7 @@
       .selected_tooth{
         display: inline-block;
         @include font_mix($font_family_P, 1.8, 400, 1.8, #313131);
-        @include border-radius(12px);
+        border-radius: 12px;
         border: 2px solid #2fcbdf;
         padding: 1px 27px 1px 6px;
         margin: 0 0 8px 4px;
@@ -2000,7 +1991,7 @@
   width: 100%;
   padding: 35px;
   margin: 0 auto;
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 
   .privacy_p{
     @include font_mix($font_family_P, 2.0, 400, 2.4, #262626);

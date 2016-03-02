@@ -1,5 +1,5 @@
-<?php session_start();?>
 <?php
+session_start();
 $utm_medium = 'Без utm_medium';
 $utm_source = 'Без utm_source';
 $utm_campaign = 'Без utm_campaign';
@@ -57,13 +57,13 @@ if(isset($_GET['cm_title'])){
 }
 ?>
 <!doctype html>
-<!--[if lte IE 8]><html class="lteie8"><![endif]-->
-<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<html>
 <head>
     <meta charset="utf-8">
     <title>Сеть стоматологических клиник</title>
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./js/libs/normalize.css">
     <link rel="stylesheet" href="./css/style.min.css" >
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <meta name="Description" content="">
@@ -99,25 +99,25 @@ if(isset($_GET['cm_title'])){
             </div>
             <div class="banner_form_wrap">
                 <h2 class="form_wrap_head"><strong class="bold">Запишитесь на бесплатный<br> осмотр врача-стоматолога</strong><br> (0 руб вместо 2000 руб):</h2>
-                <form action="./form_action/send-form-number.php" id="banner_form" class="form_div_vertical" method="post">
+                <form action="./form_action/send-form-number.php" class="form_vertical" method="post">
                     <ul class="form_ul">
                         <li class="form_li">Осмотр состояния полости рта</li>
                         <li class="form_li">Консультация узких специалистов при необходимости (терапевта, ортопеда, хирурга, ортодонта, пародонтолога)</li>
                         <li class="form_li">Составление плана лечения</li>
                         <li class="form_li">Составление сметы лечения</li>
                     </ul>
-                    <label class="form_div__label is-last">
-                        <input type="text" name="number" maxlength="18" class="form_div_input required number" required value="" placeholder="Введите Ваш телефон"/>
+                    <label class="form_label is-last">
+                        <input type="text" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
                     </label>
-                    <input type="hidden" name="utm_medium" class="input_form input_hid" value="<?php echo($utm_medium);?>" />
-                    <input type="hidden" name="utm_source" class="input_form input_hid" value="<?php echo($utm_source);?>" />
-                    <input type="hidden" name="utm_campaign" class="input_form input_hid" value="<?php echo($utm_campaign);?>" />
-                    <input type="hidden" name="utm_content" class="input_form input_hid" value="<?php echo($utm_content);?>" />
-                    <input type="hidden" name="utm_term" class="input_form input_hid" value="<?php echo($utm_term);?>" />
-                    <input type="hidden" name="cm_title" class="input_form input_hid" value="<?php echo($cm_title);?>" />
-                    <input type="hidden" name="position" class="input_form input_hid" value="Бесплатный осмотр" />
-                    <input type="hidden" name="mail" class="input_form input_hid" value="" />
-                    <button class="form_div_button have_icon" type="submit"><i class="form_div_button_icon"></i> <span>Бесплатный осмотр</span></button>
+                    <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
+                    <input type="hidden" name="utm_source" class="input_hid" value="<?php echo($utm_source);?>" />
+                    <input type="hidden" name="utm_campaign" class="input_hid" value="<?php echo($utm_campaign);?>" />
+                    <input type="hidden" name="utm_content" class="input_hid" value="<?php echo($utm_content);?>" />
+                    <input type="hidden" name="utm_term" class="input_hid" value="<?php echo($utm_term);?>" />
+                    <input type="hidden" name="cm_title" class="input_hid" value="<?php echo($cm_title);?>" />
+                    <input type="hidden" name="position" class="input_hid" value="Бесплатный осмотр" />
+                    <input type="hidden" name="mail" class="input_hid" value="" />
+                    <input type="submit" class="form_button" value="Бесплатный осмотр" />
                     <p class="recall">Перезвоним через 5 секунд</p>
                 </form>
             </div>
@@ -276,19 +276,19 @@ if(isset($_GET['cm_title'])){
                     <h2 class="form_wrap_head">Узнайте, как установить 3 импланта по цене 2 и сэкономить 21000 рублей</h2>
                     <p class="form_wrap_after_head">Оставьте заявку и узнайте все акции и скидки на имплантацию в нашей клинике</p>
                 </div>
-                <form action="./form_action/send-form-number.php" id="horizontal_form_1" class="form_div_horizontal" method="post">
-                    <label class="form_div__label is-last">
-                        <input type="text" name="number" maxlength="18" class="form_div_input white_bg required number" required value="" placeholder="Введите Ваш телефон"/>
+                <form action="./form_action/send-form-number.php" class="form_horizontal" method="post">
+                    <label class="form_label is-last">
+                        <input type="text" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
                     </label>
-                    <input type="hidden" name="utm_medium" class="input_form input_hid" value="<?php echo($utm_medium);?>" />
-                    <input type="hidden" name="utm_source" class="input_form input_hid" value="<?php echo($utm_source);?>" />
-                    <input type="hidden" name="utm_campaign" class="input_form input_hid" value="<?php echo($utm_campaign);?>" />
-                    <input type="hidden" name="utm_content" class="input_form input_hid" value="<?php echo($utm_content);?>" />
-                    <input type="hidden" name="utm_term" class="input_form input_hid" value="<?php echo($utm_term);?>" />
-                    <input type="hidden" name="cm_title" class="input_form input_hid" value="<?php echo($cm_title);?>" />
-                    <input type="hidden" name="position" class="input_form input_hid" value="Узнайте все акции и скидки на имплантацию" />
-                    <input type="hidden" name="mail" class="input_form input_hid" value="" />
-                    <input type="submit" class="form_div_button md" value="Получить скидку" />
+                    <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
+                    <input type="hidden" name="utm_source" class="input_hid" value="<?php echo($utm_source);?>" />
+                    <input type="hidden" name="utm_campaign" class="input_hid" value="<?php echo($utm_campaign);?>" />
+                    <input type="hidden" name="utm_content" class="input_hid" value="<?php echo($utm_content);?>" />
+                    <input type="hidden" name="utm_term" class="input_hid" value="<?php echo($utm_term);?>" />
+                    <input type="hidden" name="cm_title" class="input_hid" value="<?php echo($cm_title);?>" />
+                    <input type="hidden" name="position" class="input_hid" value="Узнайте все акции и скидки на имплантацию" />
+                    <input type="hidden" name="mail" class="input_hid" value="" />
+                    <input type="submit" class="form_button md" value="Получить скидку" />
                 </form>
                 <div class="form_wrap_bottom_info">
                     <p class="bottom_info_txt">Или звоните нам прямо сейчас и запишитесь на бесплатную консультацию!</p>
@@ -557,22 +557,22 @@ if(isset($_GET['cm_title'])){
             <div class="inner clearfix">
                 <div class="form_wrap">
                     <p class="form_wrap_p">Остались вопросы по лечению зубов?<br> <span class="big">Задайте их нам и получите бесплатную консультацию специалиста!</span></p>
-                    <form action="./form_action/send-form-contact.php" id="contact_form" class="form_div_vertical" method="post">
-                        <label class="form_div__label">
-                            <input type="text" name="number" maxlength="18" class="form_div_input required number" required value="" placeholder="Введите Ваш телефон"/>
+                    <form action="./form_action/send-form-contact.php" class="form_vertical" method="post">
+                        <label class="form_label">
+                            <input type="text" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
                         </label>
-                        <label class="form_div__label is-last">
-                            <textarea name="msg" class="form_div__textarea required msg" required placeholder="Чем мы можем вам помочь?"></textarea>
+                        <label class="form_label is-last">
+                            <textarea name="msg" class="form_textarea" required placeholder="Чем мы можем вам помочь?"></textarea>
                         </label>
-                        <input type="hidden" name="utm_medium" class="input_form input_hid" value="<?php echo($utm_medium);?>" />
-                        <input type="hidden" name="utm_source" class="input_form input_hid" value="<?php echo($utm_source);?>" />
-                        <input type="hidden" name="utm_campaign" class="input_form input_hid" value="<?php echo($utm_campaign);?>" />
-                        <input type="hidden" name="utm_content" class="input_form input_hid" value="<?php echo($utm_content);?>" />
-                        <input type="hidden" name="utm_term" class="input_form input_hid" value="<?php echo($utm_term);?>" />
-                        <input type="hidden" name="cm_title" class="input_form input_hid" value="<?php echo($cm_title);?>" />
-                        <input type="hidden" name="position" class="input_form input_hid" value="Вопрос посетителя" />
-                        <input type="hidden" name="mail" class="input_form input_hid" value="" />
-                        <input type="submit" class="form_div_button md" value="Задать вопрос" />
+                        <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
+                        <input type="hidden" name="utm_source" class="input_hid" value="<?php echo($utm_source);?>" />
+                        <input type="hidden" name="utm_campaign" class="input_hid" value="<?php echo($utm_campaign);?>" />
+                        <input type="hidden" name="utm_content" class="input_hid" value="<?php echo($utm_content);?>" />
+                        <input type="hidden" name="utm_term" class="input_hid" value="<?php echo($utm_term);?>" />
+                        <input type="hidden" name="cm_title" class="input_hid" value="<?php echo($cm_title);?>" />
+                        <input type="hidden" name="position" class="input_hid" value="Вопрос посетителя" />
+                        <input type="hidden" name="mail" class="input_hid" value="" />
+                        <input type="submit" class="form_button md" value="Задать вопрос" />
                     </form>
                 </div>
             </div>
@@ -586,7 +586,7 @@ if(isset($_GET['cm_title'])){
             <div class="footer_cm">
                 <div class="convert">
                     <p class="convert_p">Сделано в</p>
-                    <a href="http://convertmonster.ru/landing-page/?utm_source=mendeleev-stomatologia&amp;utm_medium=footer&amp;utm_campaign=landing" class="convert_logo" title="Создано в Convert Monster" target="_blank">
+                    <a href="http://convertmonster.ru/landing-page/?utm_source=cm-project&amp;utm_medium=footer&amp;utm_campaign=landing" class="convert_logo" title="Создано в Convert Monster" target="_blank">
                         <img class="convert_logo_img" src="./img/convert.png" alt="">
                     </a>
                 </div>
@@ -597,22 +597,22 @@ if(isset($_GET['cm_title'])){
 <div class="hidden_form custom" id="custom">
     <h2 class="form_wrap_head js_custom_head">&nbsp;</h2>
     <p class="form_wrap_p">И мы свяжемся с Вами в ближайшее время</p>
-    <form action="./form_action/send-form.php" id="custom_form" class="form_div_vertical" method="post">
-        <label class="form_div__label">
-            <input type="text" name="name" class="form_div_input required name" required value="" placeholder="Ваше имя"/>
+    <form action="./form_action/send-form.php" class="form_vertical" method="post">
+        <label class="form_label">
+            <input type="text" name="name" class="form_input" required value="" placeholder="Ваше имя"/>
         </label>
-        <label class="form_div__label is-last">
-            <input type="text" name="number" maxlength="18" class="form_div_input required number" required value="" placeholder="Ваш телефон"/>
+        <label class="form_label is-last">
+            <input type="text" name="number" maxlength="18" class="form_input" required value="" placeholder="Ваш телефон"/>
         </label>
-        <input type="hidden" name="utm_medium" class="input_form input_hid" value="<?php echo($utm_medium);?>" />
-        <input type="hidden" name="utm_source" class="input_form input_hid" value="<?php echo($utm_source);?>" />
-        <input type="hidden" name="utm_campaign" class="input_form input_hid" value="<?php echo($utm_campaign);?>" />
-        <input type="hidden" name="utm_content" class="input_form input_hid" value="<?php echo($utm_content);?>" />
-        <input type="hidden" name="utm_term" class="input_form input_hid" value="<?php echo($utm_term);?>" />
-        <input type="hidden" name="cm_title" class="input_form input_hid" value="<?php echo($cm_title);?>" />
-        <input type="hidden" name="position" class="input_form input_hid js_custom_position" value="" />
-        <input type="hidden" name="mail" class="input_form input_hid" value="" />
-        <input type="submit" class="form_div_button md js_custom_btn" value="Оставить заявку" />
+        <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
+        <input type="hidden" name="utm_source" class="input_hid" value="<?php echo($utm_source);?>" />
+        <input type="hidden" name="utm_campaign" class="input_hid" value="<?php echo($utm_campaign);?>" />
+        <input type="hidden" name="utm_content" class="input_hid" value="<?php echo($utm_content);?>" />
+        <input type="hidden" name="utm_term" class="input_hid" value="<?php echo($utm_term);?>" />
+        <input type="hidden" name="cm_title" class="input_hid" value="<?php echo($cm_title);?>" />
+        <input type="hidden" name="position" class="input_hid js_custom_position" value="" />
+        <input type="hidden" name="mail" class="input_hid" value="" />
+        <input type="submit" class="form_button js_custom_btn" value="Оставить заявку" />
     </form>
 </div>
 <div class="privacy-policy_div" id="privacy">
@@ -622,10 +622,14 @@ if(isset($_GET['cm_title'])){
     <p class="privacy_p">Если Вы разместили Ваши контактные данных на сайте, то Вы автоматически согласились на обработку данных и дальнейшую передачу Ваших контактных данных менеджерам нашего сайта.</p>
     <p class="privacy_p">В случае отзыва согласия на обработку своих персональных данных мы обязуемся удалить Ваши персональные данные в срок не позднее 3 рабочих дней.</p>
 </div>
-<link rel="stylesheet" href="./css/vendor.min.css" property="stylesheet">
+<link rel="stylesheet" href="./js/libs/libs.min.css" property="stylesheet">
 <!--[if lte IE 8]><script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script><![endif]-->
-<script src="./js/vendor.min.js"></script>
+<script src="./js/libs/jquery.min.js"></script>
 <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="./js/libs/jquery.fancybox.pack.js"></script>
+<script src="./js/libs/jquery.bxslider.min.js"></script>
+<script src="./js/libs/jquery.inputmask.bundle.js"></script>
+<script src="./js/libs/jquery.validate.min.js"></script>
 <script src="./js/main.min.js"></script>
 </body>
 </html>

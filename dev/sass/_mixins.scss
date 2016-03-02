@@ -1,0 +1,129 @@
+// responsive example, edit or remove
+$break-small: 500px;
+$break-large: 1180px;
+
+%clr{
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  *zoom: 1;
+}
+@mixin placeholder-color($color) {
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+// Convert mixins
+@mixin font_mix($family, $size:1.4, $weight:normal, $line_height:1.4, $col:#fff){
+  font-size:   ($size * 10) + px;
+  line-height: ($line_height * 10) + px;
+  font-size:   $size + rem;
+  line-height: $line_height + rem;
+  font-weight: $weight;
+  font-family: $family;
+  color: $col;
+}
+@mixin width($width){
+  width: $width;
+  margin: 0 auto;
+}
+@mixin width_max($width_min, $width_max){
+  min-width: $width_min;
+  max-width: $width_max;
+  width: 100%;
+  margin: 0 auto;
+}
+// button
+@mixin button_color($width, $fontSize){
+  height: 59px;
+  width: $width;
+  border: none;
+  border-radius: 6px;
+  background-clip: padding-box;
+  box-shadow: inset 0 -4px 0 #dc7322, inset 0 -5px 2px #fea741;
+  background-image: linear-gradient(bottom, #f58936 0%, #ffba4e 100%);
+  color: #fff;
+  text-shadow: 0 1px 1px #e67f29;
+  font-family: $font_family_button;
+  font-size:   ($fontSize * 10) + px;
+  line-height: ($fontSize * 10) + px;
+  font-size:   $fontSize + rem;
+  line-height: $fontSize + rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover{
+    background-image: linear-gradient(bottom, #f99643 0%, #ffba4e 100%);
+  }
+  &:active{
+    background-image: linear-gradient(bottom, #f58936 0%, #fba827 100%);
+  }
+}
+@mixin button_a($width, $fontSize){
+  position: relative;
+  height: 59px;
+  padding-bottom: 4px;
+  width: $width;
+  border: none;
+  border-radius: 6px;
+  background-clip: padding-box;
+  box-shadow: inset 0 -4px 0 #dc7322, inset 0 -5px 2px #fea741;
+  background-image: linear-gradient(bottom, #f58936 0%, #ffba4e 100%);
+  color: #fff;
+  text-shadow: 0 1px 1px #e67f29;
+  font-family: $font_family_button;
+  font-size:   ($fontSize * 10) + px;
+  font-size:   $fontSize + rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  appearance: none;
+  line-height: 59px;
+
+  &:hover{
+    background-image: linear-gradient(bottom, #f99643 0%, #ffba4e 100%);
+  }
+  &:active{
+    background-image: linear-gradient(bottom, #f58936 0%, #fba827 100%);
+  }
+}
+// input
+@mixin input_m{
+  width: 100%;
+  padding: 14.5px 20px;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  background-clip: padding-box;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  color: #8b8b8b;
+  font-family: $font_family_input;
+  font-size: 14px;
+  font-weight: 600;
+  @include placeholder-color(#8b8b8b);
+
+  &:focus{
+    box-shadow: inset 0 0 10px rgba(0,0,0,.1);
+  }
+}
+@mixin textareas_m{
+  width: 100%;
+  padding: 14.5px 20px;
+}

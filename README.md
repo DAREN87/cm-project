@@ -1,1 +1,1 @@
-# default-project
+# cm-project

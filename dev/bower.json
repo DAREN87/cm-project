@@ -1,0 +1,28 @@
+{
+  "name": "cm-project",
+  "version": "0.2.0",
+  "homepage": "https://github.com/DAREN87/default-project",
+  "authors": [
+    "Kodintsev Andrey <kodintsevandrey@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "^3.0.3",
+    "jquery": "^1.11.3",
+    "bxslider-4": "^4.2.5",
+    "fancybox": "fancyBox#^2.1.5",
+    "jquery.inputmask": "^3.2.7",
+    "jquery-validation": "jquery.validate#^1.13.0"
+  }
+}
