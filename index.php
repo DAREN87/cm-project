@@ -322,7 +322,7 @@ if(isset($_GET['cm_title'])){
     <p class="privacy_p">Если Вы разместили Ваши контактные данных на сайте, то Вы автоматически согласились на обработку данных и дальнейшую передачу Ваших контактных данных менеджерам нашего сайта.</p>
     <p class="privacy_p">В случае отзыва согласия на обработку своих персональных данных мы обязуемся удалить Ваши персональные данные в срок не позднее 3 рабочих дней.</p>
 </div>
-<link rel="stylesheet" href="./js/libs/css/libs.min.css" property="stylesheet">
+<link rel="stylesheet" href="./js/libs/libs.min.css" property="stylesheet">
 <!--[if lte IE 8]><script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script><![endif]-->
 <script src="./js/libs/jquery.min.js"></script>
 <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>

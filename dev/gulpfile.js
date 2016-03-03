@@ -46,7 +46,7 @@
 
   //bower
   gulp.task('bower', function() {
-    return gulp.src(mainBowerFiles({
+    var mainFiles = mainBowerFiles({
       "overrides": {
         "jquery": {
           "main": "dist/jquery.min.js"
@@ -80,17 +80,21 @@
           ]
         }
       }
-    }))
-    .pipe(gulp.dest('../js/libs/'));
+    });
+    if(!mainFiles.length){
+      return;
+    }
+    return gulp.src(mainFiles)
+      .pipe(gulp.dest('../js/libs'));
   });
 
   //libs.min.css
   gulp.task('libs-css', ['bower'], function() {
-    return gulp.src(['../js/libs/*.css'])
+    return gulp.src(['!../js/libs/libs.min.css', '../js/libs/*.css'])
       .pipe(concat('libs.min.css'))
       .pipe(cssnano({autoprefixer: {browsers: ['last 30 versions','> 5%'], add: true}}))
       .pipe(size({title: 'size of libs.min.css'}))
-      .pipe(gulp.dest('../js/libs/css'))
+      .pipe(gulp.dest('../js/libs'))
       .pipe(notify("libs.min.css complete"));
   });
 
