@@ -27,7 +27,7 @@
   gulp.task('style', ['compass'], function() {
     return gulp.src(['./js/vendor/normalize.css/normalize.css', '../css/screen.css'])
       .pipe(concat('style.min.css'))
-      .pipe(cssnano({autoprefixer: {browsers: ['last 50 versions','> 5%'], add: true}}))
+      .pipe(cssnano({autoprefixer: {browsers: ['last 30 versions','> 5%'], add: true}}))
       .pipe(size({title: 'size of style.min.css'}))
       .pipe(gulp.dest('../css'))
       .pipe(notify("style.min.css complete"));
@@ -54,7 +54,7 @@
         "bxslider-4": {
           "main": [
             "dist/jquery.bxslider.min.js",
-            "dist/jquery.bxslider.min.css"
+            "dist/jquery.bxslider.css"
           ]
         },
         "fancybox": {
@@ -88,9 +88,9 @@
   gulp.task('libs-css', ['bower'], function() {
     return gulp.src(['../js/libs/*.css'])
       .pipe(concat('libs.min.css'))
-      .pipe(cssnano({autoprefixer: {browsers: ['last 50 versions','> 5%'], add: true}}))
+      .pipe(cssnano({autoprefixer: {browsers: ['last 30 versions','> 5%'], add: true}}))
       .pipe(size({title: 'size of libs.min.css'}))
-      .pipe(gulp.dest('../js/libs'))
+      .pipe(gulp.dest('../js/libs/css'))
       .pipe(notify("libs.min.css complete"));
   });
 
