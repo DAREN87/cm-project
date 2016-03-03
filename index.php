@@ -64,7 +64,7 @@ if(isset($_GET['cm_title'])){
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.min.css" >
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <meta name="Description" content="">
     <meta name="Keywords" content="">
 </head>
