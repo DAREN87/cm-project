@@ -24,7 +24,7 @@
         margin-bottom: 40px;
 
         .head_h1{
-          @include font_mix($font_family_P, 3.5, 400, 4.0, #000000);
+          @include font_mix($font_family_OS, 3.5, 400, 4.0, #000000);
         }
       }
     }
@@ -38,7 +38,7 @@
     margin: 0 auto;
 
     .form_button{
-      @include button_color(100%, 1.5);
+      @include button_color(100%, 1.8);
       display: block;
     }
     .form_label{
@@ -46,7 +46,7 @@
       margin: 0 auto 15px auto;
       width: 100%;
 
-      &.is-last{
+      &.is_last{
         margin: 0 0 15px 0;
       }
     }
@@ -64,7 +64,7 @@
         margin-bottom: 30px;
 
         .head_h1{
-          @include font_mix($font_family_P, 3.0, 400, 3.4, #000000);
+          @include font_mix($font_family_OS, 3.0, 400, 3.4, #000000);
         }
       }
     }

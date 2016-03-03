@@ -22,7 +22,7 @@ $break-large: 1180px;
   }
 }
 // Convert mixins
-@mixin font_mix($family, $size:1.4, $weight:normal, $line_height:1.4, $col:#fff){
+@mixin font_mix($family, $size:1.6, $weight:normal, $line_height:1.6, $col:#fff){
   font-size:   ($size * 10) + px;
   line-height: ($line_height * 10) + px;
   font-size:   $size + rem;
@@ -53,9 +53,9 @@ $break-large: 1180px;
   color: #fff;
   text-shadow: 0 1px 1px #e67f29;
   font-family: $font_family_button;
-  font-size:   ($fontSize * 10) + px;
+  font-size: ($fontSize * 10) + px;
   line-height: ($fontSize * 10) + px;
-  font-size:   $fontSize + rem;
+  font-size: $fontSize + rem;
   line-height: $fontSize + rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -64,6 +64,7 @@ $break-large: 1180px;
   display: block;
   text-align: center;
   text-decoration: none;
+  appearance: none;
 
   &:hover{
     background-image: linear-gradient(bottom, #f99643 0%, #ffba4e 100%);
@@ -85,8 +86,8 @@ $break-large: 1180px;
   color: #fff;
   text-shadow: 0 1px 1px #e67f29;
   font-family: $font_family_button;
-  font-size:   ($fontSize * 10) + px;
-  font-size:   $fontSize + rem;
+  font-size: ($fontSize * 10) + px;
+  font-size: $fontSize + rem;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
@@ -118,12 +119,9 @@ $break-large: 1180px;
   font-size: 14px;
   font-weight: 600;
   @include placeholder-color(#8b8b8b);
+  appearance: none;
 
   &:focus{
     box-shadow: inset 0 0 10px rgba(0,0,0,.1);
   }
-}
-@mixin textareas_m{
-  width: 100%;
-  padding: 14.5px 20px;
 }

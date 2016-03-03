@@ -60,10 +60,9 @@ if(isset($_GET['cm_title'])){
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Сеть стоматологических клиник</title>
+    <title>CM Project</title>
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./js/libs/normalize.css">
     <link rel="stylesheet" href="./css/style.min.css" >
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <meta name="Description" content="">
@@ -94,8 +93,7 @@ if(isset($_GET['cm_title'])){
     <div class="wrapper banner" id="block_2">
         <div class="inner clearfix">
             <div class="banner_info">
-                <h1 class="banner_head"><?php echo $banner_head;?></h1>
-                <?php echo $banner_info_txt;?>
+                <h1 class="banner_head">Сеть стоматологических клиник</h1>
             </div>
             <div class="banner_form_wrap">
                 <h2 class="form_wrap_head"><strong class="bold">Запишитесь на бесплатный<br> осмотр врача-стоматолога</strong><br> (0 руб вместо 2000 руб):</h2>
@@ -106,7 +104,7 @@ if(isset($_GET['cm_title'])){
                         <li class="form_li">Составление плана лечения</li>
                         <li class="form_li">Составление сметы лечения</li>
                     </ul>
-                    <label class="form_label is-last">
+                    <label class="form_label is_last">
                         <input type="text" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
                     </label>
                     <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
@@ -145,130 +143,6 @@ if(isset($_GET['cm_title'])){
             </div>
         </div>
     </div>
-    <div class="wrapper techniques" id="block_4">
-        <div class="inner">
-            <h2 class="default_head">Бережная имплантация с <span class="yellow">пожизненной</span> гарантией</h2>
-            <p class="after_head">Методики имплантации:</p>
-            <div class="techniques_wrap">
-                <div class="technique">
-                    <img src="./img/technique_img_1.jpg" alt="" class="technique_img">
-                    <h3 class="technique_head"><span>Классическая<br>
-                        имплантация зубов<br>
-                        в два этапа</span></h3>
-                    <p class="technique_txt">Имплант полностью обрастает
-                        костной тканью за 3-6 мес.
-                        Затем устанавливается коронка,
-                        идеально подходящая под цвет
-                        ваших зубов</p>
-                </div>
-                <div class="technique">
-                    <img src="./img/technique_img_1.jpg" alt="" class="technique_img">
-                    <h3 class="technique_head"><span>Одномоментная<br>
-                        имплантация сразу<br>
-                        после удаления зуба</span></h3>
-                    <p class="technique_txt">За одно посещение пациент
-                        удаляет зуб, и в этот же момент
-                        ему устанавливается титановый
-                        имплант, заменяющий корень.
-                        Примерно через 10 дней можно
-                        установить коронку.</p>
-                </div>
-                <div class="technique">
-                    <img src="./img/technique_img_1.jpg" alt="" class="technique_img">
-                    <h3 class="technique_head"><span>Базальная имплантация<br>
-                        в один этап с установкой<br>
-                        временных коронок<br>
-                        (немедленная нагрузка)</span></h3>
-                    <p class="technique_txt">Более глубокая постановка
-                        имплантов, за счет этого
-                        костную ткань не нужно
-                        наращивать. Жевательная
-                        функция зубов полностью
-                        восстанавливается в течение
-                        недели 7-10 дней</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper compare" id="block_5">
-        <div class="inner">
-            <h2 class="default_head white">Сравните 6 моделей имплантов </h2>
-            <div class="compare_wrap clearfix">
-                <div class="compare_b">
-                    <img class="compare_icon" src="./img/compare_icon_1.png" alt=""/>
-                    <p class="compare_info">Израиль</p>
-                </div>
-                <div class="compare_b">
-                    <img class="compare_icon" src="./img/compare_icon_2.png" alt=""/>
-                    <p class="compare_info">Израиль</p>
-                </div>
-                <div class="compare_b">
-                    <img class="compare_icon" src="./img/compare_icon_3.png" alt=""/>
-                    <p class="compare_info">Швеция</p>
-                </div>
-                <div class="compare_b">
-                    <img class="compare_icon" src="./img/compare_icon_4.png" alt=""/>
-                    <p class="compare_info">Южная Корея</p>
-                </div>
-                <div class="compare_b">
-                    <img class="compare_icon" src="./img/compare_icon_5.png" alt=""/>
-                    <p class="compare_info">США</p>
-                </div>
-                <div class="compare_b">
-                    <img class="compare_icon" src="./img/compare_icon_6.png" alt=""/>
-                    <p class="compare_info">Швейцария</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper price_promotions" id="block_6">
-        <div class="inner">
-            <h2 class="default_head"><span class="red">Цены и акции</span> на импланты</h2>
-            <div class="price_promotions_wrap">
-                <div class="price_promotions_item">
-                    <img src="./img/price_promo_icon_1_1.png" alt="" class="item_icon">
-                    <div class="separator"></div>
-                    <p class="item_txt">Импланты MIS<br>
-                        и Alpha Bio<br>
-                        (Израиль)</p>
-                    <div class="separator"></div>
-                    <p class="item_prom">АКЦИЯ</p>
-                    <div class="separator"></div>
-                    <p class="item_price">от <span class="red">21 000</span> руб</p>
-                </div>
-                <div class="price_promotions_item">
-                    <img src="./img/price_promo_icon_1_2.png" alt="" class="item_icon">
-                    <div class="separator"></div>
-                    <p class="item_txt">Импланты<br>
-                        ASTRA<br>
-                        (Швеция)</p>
-                    <div class="separator"></div>
-                    <p class="item_prom">&nbsp;</p>
-                    <p class="item_price">от <span class="red">40 000</span> руб</p>
-                </div>
-                <div class="price_promotions_item">
-                    <img src="./img/price_promo_icon_1_3.png" alt="" class="item_icon">
-                    <div class="separator"></div>
-                    <p class="item_txt">Импланты<br>
-                        Implantium<br>
-                        (Юж. Корея)</p>
-                    <div class="separator"></div>
-                    <p class="item_prom">&nbsp;</p>
-                    <p class="item_price">от <span class="red">29 000</span> руб</p>
-                </div>
-                <div class="price_promotions_item">
-                    <img src="./img/price_promo_icon_1_4.png" alt="" class="item_icon">
-                    <div class="separator"></div>
-                    <p class="item_txt">Импланты<br>
-                        Superline<br>
-                        (США)</p>
-                    <div class="separator"></div>
-                    <p class="item_prom">&nbsp;</p>
-                    <p class="item_price">от <span class="red">39 000</span> руб</p>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="wrapper horizontal_form" id="block_7">
         <div class="inner">
             <div class="horizontal_form_wrap">
@@ -277,7 +151,7 @@ if(isset($_GET['cm_title'])){
                     <p class="form_wrap_after_head">Оставьте заявку и узнайте все акции и скидки на имплантацию в нашей клинике</p>
                 </div>
                 <form action="./form_action/send-form-number.php" class="form_horizontal" method="post">
-                    <label class="form_label is-last">
+                    <label class="form_label is_last">
                         <input type="text" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
                     </label>
                     <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
@@ -290,109 +164,13 @@ if(isset($_GET['cm_title'])){
                     <input type="hidden" name="mail" class="input_hid" value="" />
                     <input type="submit" class="form_button md" value="Получить скидку" />
                 </form>
+                <div class="form_wrap_stock">
+                    <p class="stock_txt">До конца акции:</p>
+                    <div class="countbox clearfix"></div>
+                </div>
                 <div class="form_wrap_bottom_info">
                     <p class="bottom_info_txt">Или звоните нам прямо сейчас и запишитесь на бесплатную консультацию!</p>
                     <a href="tel:88001234567" class="bottom_info_phone">8 (800) 123-45-67</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper why" id="block_8">
-        <div class="inner">
-            <h2 class="default_head">Почему до <span class="yellow">5000</span> пациентов ежегодно<br>
-                доверяют нам свои улыбки?</h2>
-            <div class="why_wrap">
-                <div class="why_item clearfix">
-                    <img src="./img/why_item_icon_1_1.png" alt="" class="why_item_icon">
-                    <div class="why_item_info">
-                        <h3 class="info_head">Работаем напрямую с производителями</h3>
-                        <p class="info_txt">Мы участвуем в официальных программах производителей имплантов и пользуемся
-                            фирменной гарантией</p>
-                    </div>
-                </div>
-                <div class="why_item clearfix">
-                    <img src="./img/why_item_icon_1_2.png" alt="" class="why_item_icon">
-                    <div class="why_item_info">
-                        <h3 class="info_head">Собственная зуботехническая лаборатория</h3>
-                        <p class="info_txt">Работа зубного техника обеспечивает максимальную точность установки импланта</p>
-                    </div>
-                </div>
-                <div class="why_item clearfix">
-                    <img src="./img/why_item_icon_1_3.png" alt="" class="why_item_icon">
-                    <div class="why_item_info">
-                        <h3 class="info_head">Пожизненная гарантия на имплант</h3>
-                        <p class="info_txt">Всю работу по установке импланта мы сделаем максимально качественно, так как несем реальную финансовую ответственность за результат</p>
-                    </div>
-                </div>
-                <div class="why_item clearfix">
-                    <img src="./img/why_item_icon_1_4.png" alt="" class="why_item_icon">
-                    <div class="why_item_info">
-                        <h3 class="info_head">Опыт врачей от 8 лет</h3>
-                        <p class="info_txt">В штате клиники - опытные хирурги, ортопеды, имплантологи. Более 50 000 проведенных операций. Проведения операций остеопластики (наращивание костной ткани) и синуслифтинга</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper examples" id="block_9">
-        <div class="inner">
-            <h2 class="default_head"><span class="yellow">Примеры</span> работ и отзывы</h2>
-            <div class="examples_wrap clearfix">
-                <div class="examples_before_and_after clearfix">
-                    <div class="baf_item">
-                        <div class="baf_item_head">До</div>
-                        <img src="./img/baf_item_img_b_1.jpg" alt="" class="baf_item_img">
-                    </div>
-                    <div class="baf_item">
-                        <div class="baf_item_head">После</div>
-                        <img src="./img/baf_item_img_a_1.jpg" alt="" class="baf_item_img">
-                    </div>
-                </div>
-                <p class="examples_info">Предоставили план лечения, цены на услуги, Я сразу переспросил, "цены не будут меняться после установок имплантов" получил в ответ "НЕТ, не будут меняться", все указанные скидки были учтены, Профессионально выполнена работа, отеков почти не было, болей тоже, на следующий день вышел на работу. Очень Доволен работой врача</p>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper services" id="block_40">
-        <h2 class="default_head">Все <span class="yellow">услуги</span></h2>
-        <a href="#" class="services_button md crowns_button"><span class="button_txt">Коронки</span></a>
-        <div id="crowns" class="hide_ajax_content"></div>
-        <a href="#" class="services_button md prostheses_button"><span class="button_txt">Протезы</span></a>
-        <div id="prostheses" class="hide_ajax_content"></div>
-        <a href="#" class="services_button md treatment_button"><span class="button_txt">Лечение зубов</span></a>
-        <div id="treatment" class="hide_ajax_content"></div>
-        <a href="#" class="services_button md braces_button"><span class="button_txt">Брекеты</span></a>
-        <div id="braces" class="hide_ajax_content"></div>
-    </div>
-    <div class="wrapper subway" id="block_33">
-        <div class="inner">
-            <h2 class="default_head">Клиники <span class="yellow">по всей Москве</span><br>
-                в шаговой доступности от метро</h2>
-            <div class="subway_wrap clearfix">
-                <div class="subway_map">
-                    <div id="map" class="map"></div>
-                </div>
-                <div class="subway_info">
-                    <h3 class="info_head">ЗВОНИТЕ</h3>
-                    <a href="tel:88001234567" class="info_phone">8 (800) 123-45-67</a>
-                    <p class="info_txt">Мы подберем для васближайшую клинику и лучших специалистов</p>
-                    <div class="info_group clearfix">
-                        <ul class="info_ul">
-                            <li class="info_li">м. Парк культуры</li>
-                            <li class="info_li">м. Ул. 1905 года</li>
-                            <li class="info_li">м. Парк культуры</li>
-                            <li class="info_li">м. Ул. 1905 года</li>
-                            <li class="info_li">м. Парк культуры</li>
-                            <li class="info_li">м. Ул. 1905 года</li>
-                        </ul>
-                        <ul class="info_ul">
-                            <li class="info_li">м. Парк культуры</li>
-                            <li class="info_li">м. Ул. 1905 года</li>
-                            <li class="info_li">м. Парк культуры</li>
-                            <li class="info_li">м. Ул. 1905 года</li>
-                            <li class="info_li">м. Парк культуры</li>
-                            <li class="info_li">м. Ул. 1905 года</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -466,84 +244,6 @@ if(isset($_GET['cm_title'])){
             </div>
         </div>
     </div>
-    <div class="wrapper installments" id="block_36">
-        <div class="inner">
-            <h2 class="default_head">Лечение <span class="yellow">в рассрочку</span> без процентов и переплат</h2>
-            <div class="installments_wrap">
-                <div class="installment_item clearfix">
-                    <img src="./img/installment_icon_1.png" alt="" class="item_icon">
-                    <p class="item_txt">Услуга беспроцентной рассрочки
-                        на стоматологическое лечение.
-                        Оформление за 30 мин.
-                        без залога и поручителей.</p>
-                </div>
-                <div class="installment_item clearfix">
-                    <img src="./img/installment_icon_2.png" alt="" class="item_icon">
-                    <p class="item_txt">Вы не переплачиваете
-                        ни рубля от стоимости услуг,
-                        указанной в прайсе клиники.</p>
-                </div>
-                <div class="installment_item clearfix">
-                    <img src="./img/installment_icon_3.png" alt="" class="item_icon">
-                    <p class="item_txt">Рассрочку можно оформить
-                        с оплатой первоначального
-                        взноса от 0% на Ваше
-                        усмотрение</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper approach" id="block_37">
-        <div class="inner">
-            <h2 class="default_head"><span class="yellow">Профессиональный</span> подход к лечению Ваших зубов</h2>
-            <div class="approach_wrap">
-                <div class="approach_item clearfix">
-                    <img src="./img/approach_item_icon_1.png" alt="" class="item_icon">
-                    <div class="item_info">
-                        <h3 class="info_head">Индивидуальная<br>
-                            карта здоровья</h3>
-                        <p class="info_txt">На первичной консультации мы
-                            оформляем  персональную карту
-                            здоровья. В ней мы фиксируем
-                            полную информацию о здоровье
-                            ваших зубов и ходе лечения.</p>
-                    </div>
-                </div>
-                <div class="approach_item clearfix">
-                    <img src="./img/approach_item_icon_2.png" alt="" class="item_icon">
-                    <div class="item_info">
-                        <h3 class="info_head">Каждый диагноз<br>
-                            достоверен</h3>
-                        <p class="info_txt">Каждый диагноз подтверждается
-                            3D снимком, визиографом, а
-                            также фото или видеосъемкой.</p>
-                    </div>
-                </div>
-                <div class="approach_item clearfix">
-                    <img src="./img/approach_item_icon_3.png" alt="" class="item_icon">
-                    <div class="item_info">
-                        <h3 class="info_head">Бесплатный осмотр<br>
-                            каждые полгода</h3>
-                        <p class="info_txt">Наши стоматологи всегда будут
-                            следить за здоровьем Ваших
-                            зубов на протяжении всей
-                            Вашей жизни!</p>
-                    </div>
-                </div>
-                <div class="approach_item clearfix">
-                    <img src="./img/approach_item_icon_4.png" alt="" class="item_icon">
-                    <div class="item_info">
-                        <h3 class="info_head">Скидки и акции для<br>
-                            постоянных клиентов</h3>
-                        <p class="info_txt">Для постоянных клиентов всегда
-                            есть особые акции и
-                            предложения. Все скидки
-                            суммируются!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="wrapper contact" id="block_38">
         <div class="inner contact_inner">
             <h2 class="default_head">Не откладывайте здоровье ваших зубов на завтра!<br> <span class="yellow">Свяжитесь с нами прямо сейчас</span></h2>
@@ -561,7 +261,7 @@ if(isset($_GET['cm_title'])){
                         <label class="form_label">
                             <input type="text" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
                         </label>
-                        <label class="form_label is-last">
+                        <label class="form_label is_last">
                             <textarea name="msg" class="form_textarea" required placeholder="Чем мы можем вам помочь?"></textarea>
                         </label>
                         <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
@@ -601,7 +301,7 @@ if(isset($_GET['cm_title'])){
         <label class="form_label">
             <input type="text" name="name" class="form_input" required value="" placeholder="Ваше имя"/>
         </label>
-        <label class="form_label is-last">
+        <label class="form_label is_last">
             <input type="text" name="number" maxlength="18" class="form_input" required value="" placeholder="Ваш телефон"/>
         </label>
         <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
@@ -628,7 +328,7 @@ if(isset($_GET['cm_title'])){
 <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="./js/libs/jquery.fancybox.pack.js"></script>
 <script src="./js/libs/jquery.bxslider.min.js"></script>
-<script src="./js/libs/jquery.inputmask.bundle.js"></script>
+<script src="./js/libs/jquery.inputmask.bundle.min.js"></script>
 <script src="./js/libs/jquery.validate.min.js"></script>
 <script src="./js/main.min.js"></script>
 </body>

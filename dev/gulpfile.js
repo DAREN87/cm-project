@@ -20,24 +20,20 @@
         css: '../css',
         sass: './sass'
       }))
-      .pipe(rename('style.min.css'))
+      .pipe(gulp.dest('../css'));
+  });
+
+  //style.min.css
+  gulp.task('style', ['compass'], function() {
+    return gulp.src(['./js/vendor/normalize.css/normalize.css', '../css/screen.css'])
+      .pipe(concat('style.min.css'))
       .pipe(cssnano({autoprefixer: {browsers: ['last 50 versions','> 5%'], add: true}}))
       .pipe(size({title: 'size of style.min.css'}))
       .pipe(gulp.dest('../css'))
-      .pipe(notify("css compiled!"));
+      .pipe(notify("style.min.css complete"));
   });
 
-  //libs css
-  gulp.task('libs-css', function() {
-    return gulp.src(['!../js/libs/normalize.css', '../js/libs/*.css', './js/libs/**/*.css'])
-      .pipe(concat('libs.min.css'))
-      .pipe(cssnano({autoprefixer: {browsers: ['last 50 versions','> 5%'], add: true}}))
-      .pipe(size({title: 'size of libs.min.css'}))
-      .pipe(gulp.dest('../js/libs'))
-      .pipe(notify("css libs compiled!"));
-  });
-
-  //scripts
+  //main.min.js
   gulp.task('scripts-main', function() {
     return gulp.src('./js/*.js')
       .pipe(uncomment({removeEmptyLines: true}))
@@ -45,7 +41,7 @@
       .pipe(uglify())
       .pipe(size({title: 'size of main.min.js'}))
       .pipe(gulp.dest('../js'))
-      .pipe(notify("main.js compiled!"));
+      .pipe(notify("main.min.js complete"));
   });
 
   //bower
@@ -58,9 +54,7 @@
         "bxslider-4": {
           "main": [
             "dist/jquery.bxslider.min.js",
-            "dist/jquery.bxslider.min.css",
-            "dist/images/bx_loader.gif",
-            "dist/images/controls.png"
+            "dist/jquery.bxslider.min.css"
           ]
         },
         "fancybox": {
@@ -77,7 +71,7 @@
         },
         "jquery.inputmask": {
           "main": [
-            "dist/jquery.inputmask.bundle.js"
+            "dist/min/jquery.inputmask.bundle.min.js"
           ]
         },
         "jquery-validation": {
@@ -87,15 +81,25 @@
         }
       }
     }))
-    .pipe(gulp.dest('../js/libs'));
+    .pipe(gulp.dest('../js/libs/'));
+  });
+
+  //libs.min.css
+  gulp.task('libs-css', ['bower'], function() {
+    return gulp.src(['../js/libs/*.css'])
+      .pipe(concat('libs.min.css'))
+      .pipe(cssnano({autoprefixer: {browsers: ['last 50 versions','> 5%'], add: true}}))
+      .pipe(size({title: 'size of libs.min.css'}))
+      .pipe(gulp.dest('../js/libs'))
+      .pipe(notify("libs.min.css complete"));
   });
 
   //watch
   gulp.task('watch', function() {
-    gulp.watch(['./sass/*.scss', './sass/**/*.scss'], ['compass']);
+    gulp.watch(['./sass/*.scss', './sass/**/*.scss'], ['compass', 'style']);
     gulp.watch('./js/*.js', ['scripts-main']);
   });
 
   //default
-  gulp.task('default', ['compass', 'libs-css', 'scripts-main', 'bower', 'watch']);
+  gulp.task('default', ['compass', 'style', 'scripts-main', 'bower', 'libs-css', 'watch']);
 }(require));
