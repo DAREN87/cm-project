@@ -97,7 +97,7 @@ if(isset($_GET['cm_title'])){
             </div>
             <div class="banner_form_wrap">
                 <h2 class="form_wrap_head"><strong class="bold">Запишитесь на бесплатный<br> осмотр врача-стоматолога</strong><br> (0 руб вместо 2000 руб):</h2>
-                <form action="./form_action/send-form-number.php" class="form_vertical" method="post">
+                <form action="./handlers_form/send-form-number.php" class="form_vertical" method="post">
                     <ul class="form_ul">
                         <li class="form_li">Осмотр состояния полости рта</li>
                         <li class="form_li">Консультация узких специалистов при необходимости (терапевта, ортопеда, хирурга, ортодонта, пародонтолога)</li>
@@ -150,7 +150,7 @@ if(isset($_GET['cm_title'])){
                     <h2 class="form_wrap_head">Узнайте, как установить 3 импланта по цене 2 и сэкономить 21000 рублей</h2>
                     <p class="form_wrap_after_head">Оставьте заявку и узнайте все акции и скидки на имплантацию в нашей клинике</p>
                 </div>
-                <form action="./form_action/send-form-number.php" class="form_horizontal" method="post">
+                <form action="./handlers_form/send-form-number.php" class="form_horizontal" method="post">
                     <label class="form_label is_last">
                         <input type="text" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
                     </label>
@@ -257,7 +257,7 @@ if(isset($_GET['cm_title'])){
             <div class="inner clearfix">
                 <div class="form_wrap">
                     <p class="form_wrap_p">Остались вопросы по лечению зубов?<br> <span class="big">Задайте их нам и получите бесплатную консультацию специалиста!</span></p>
-                    <form action="./form_action/send-form-contact.php" class="form_vertical" method="post">
+                    <form action="./handlers_form/send-form-contact.php" class="form_vertical" method="post">
                         <label class="form_label">
                             <input type="text" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
                         </label>
@@ -297,7 +297,7 @@ if(isset($_GET['cm_title'])){
 <div class="hidden_form custom" id="custom">
     <h2 class="form_wrap_head js_custom_head">&nbsp;</h2>
     <p class="form_wrap_p">И мы свяжемся с Вами в ближайшее время</p>
-    <form action="./form_action/send-form.php" class="form_vertical" method="post">
+    <form action="./handlers_form/send-form.php" class="form_vertical" method="post">
         <label class="form_label">
             <input type="text" name="name" class="form_input" required value="" placeholder="Ваше имя"/>
         </label>
