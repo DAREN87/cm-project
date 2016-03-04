@@ -34,7 +34,7 @@
   });
 
   //main.min.js
-  gulp.task('scripts-main', function() {
+  gulp.task('scriptsMain', function() {
     return gulp.src('./js/*.js')
       .pipe(uncomment({removeEmptyLines: true}))
       .pipe(concat('main.min.js'))
@@ -45,56 +45,22 @@
   });
 
   //bower
-  gulp.task('bower', function() {
-    var mainFiles = mainBowerFiles({
-      "overrides": {
-        "jquery": {
-          "main": "dist/jquery.min.js"
-        },
-        "bxslider-4": {
-          "main": [
-            "dist/jquery.bxslider.min.js",
-            "dist/jquery.bxslider.css"
-          ]
-        },
-        "fancybox": {
-          "main": [
-            "source/jquery.fancybox.css",
-            "source/blank.gif",
-            "source/fancybox_loading.gif",
-            "source/fancybox_loading@2x.gif",
-            "source/fancybox_overlay.png",
-            "source/fancybox_sprite.png",
-            "source/fancybox_sprite@2x.png",
-            "source/jquery.fancybox.pack.js"
-          ]
-        },
-        "jquery.inputmask": {
-          "main": [
-            "dist/min/jquery.inputmask.bundle.min.js"
-          ]
-        },
-        "jquery-validation": {
-          "main": [
-            "dist/jquery.validate.min.js"
-          ]
-        }
-      }
-    });
-    if(!mainFiles.length){
-      return;
-    }
-    return gulp.src(mainFiles)
+  gulp.task('bowerJS', function() {
+    return gulp.src(mainBowerFiles('**/*.js'))
       .pipe(gulp.dest('../js/libs'));
+  });
+  gulp.task('bowerCss', function() {
+    return gulp.src(mainBowerFiles(['**/*.css', '**/*.png', '**/*.gif', '**/*.jpg']))
+      .pipe(gulp.dest('../js/libs/css'));
   });
 
   //libs.min.css
-  gulp.task('libs-css', ['bower'], function() {
-    return gulp.src(['!../js/libs/libs.min.css', '../js/libs/*.css'])
+  gulp.task('libsCss', ['bowerCss'], function() {
+    return gulp.src(['!../js/libs/css/libs.min.css', '../js/libs/css/*.css'])
       .pipe(concat('libs.min.css'))
       .pipe(cssnano({autoprefixer: {browsers: ['last 30 versions','> 5%'], add: true}}))
       .pipe(size({title: 'size of libs.min.css'}))
-      .pipe(gulp.dest('../js/libs'))
+      .pipe(gulp.dest('../js/libs/css'))
       .pipe(notify("libs.min.css complete"));
   });
 
@@ -105,5 +71,5 @@
   });
 
   //default
-  gulp.task('default', ['compass', 'style', 'scripts-main', 'bower', 'libs-css', 'watch']);
+  gulp.task('default', ['compass', 'style', 'scriptsMain', 'bowerJS',  'bowerCss', 'libsCss', 'watch']);
 }(require));
