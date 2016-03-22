@@ -52,6 +52,9 @@ body{
   height: 100%;
 }
 // resets
+h1{
+  margin: 0; //normalize style reset
+}
 a img,fieldset{
   border:none;
 }
@@ -72,7 +75,10 @@ input.file.error {
   color: #e51414 !important;
 }
 .errors_block{
-  @include font_mix($font_family_input, 1.0, 400, 1.0, #e51414);
+  font-family: $font_family_input;
+  font-size: 10px;
+  line-height: 10px;
+  color: #e51414;
   position: absolute;
   right: 10px;
   bottom: 4px;

@@ -67,7 +67,7 @@
   //watch
   gulp.task('watch', function() {
     gulp.watch(['./sass/*.scss', './sass/**/*.scss'], ['compass', 'style']);
-    gulp.watch('./js/*.js', ['scripts-main']);
+    gulp.watch('./js/*.js', ['scriptsMain']);
   });
 
   //default
