@@ -24,10 +24,10 @@
         margin-bottom: 40px;
 
         .banner_h1{
-          @include font_mix_family($font_family_OS, 3.5, 400, 4.0, #000000);
+          @include font_mix(3.5, 400, 4.0, #000000);
         }
         .banner_txt{
-          @include font_mix_family($font_family_OS, 2.0, 400, 2.4, #000000);
+          @include font_mix(2.0, 400, 2.4, #000000);
         }
       }
     }
@@ -67,10 +67,10 @@
         margin-bottom: 30px;
 
         .banner_h1{
-          @include font_mix_family($font_family_OS, 3.0, 400, 3.4, #000000);
+          @include font_mix(3.0, 400, 3.4, #000000);
         }
         .banner_txt{
-          @include font_mix_family($font_family_OS, 1.8, 400, 2.0, #000000);
+          @include font_mix(1.8, 400, 2.0, #000000);
         }
       }
     }
