@@ -294,7 +294,7 @@ if(isset($_GET['cm_title'])){
         </div>
     </footer>
 </div>
-<div class="hidden_form custom" id="custom">
+<div class="hidden_form" id="custom">
     <h2 class="form_wrap_head js_custom_head">&nbsp;</h2>
     <p class="form_wrap_p">И мы свяжемся с Вами в ближайшее время</p>
     <form action="./handlers/send-form.php" class="form_vertical" method="post">

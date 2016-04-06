@@ -14,17 +14,20 @@
   .privacy_policy{
     padding: 15px;
   }
-  .thank-you{
+  .thank_you{
 
     .banner{
       padding: 50px 0;
 
-      .banner-b{
+      .banner_thanks{
         text-align: center;
         margin-bottom: 40px;
 
-        .head_h1{
-          @include font_mix($font_family_OS, 3.5, 400, 4.0, #000000);
+        .banner_h1{
+          @include font_mix_family($font_family_OS, 3.5, 400, 4.0, #000000);
+        }
+        .banner_txt{
+          @include font_mix_family($font_family_OS, 2.0, 400, 2.4, #000000);
         }
       }
     }
@@ -55,16 +58,19 @@
   .privacy_policy{
     padding: 10px;
   }
-  .thank-you{
+  .thank_you{
 
     .banner{
       padding: 40px 0;
 
-      .banner-b{
+      .banner_thanks{
         margin-bottom: 30px;
 
-        .head_h1{
-          @include font_mix($font_family_OS, 3.0, 400, 3.4, #000000);
+        .banner_h1{
+          @include font_mix_family($font_family_OS, 3.0, 400, 3.4, #000000);
+        }
+        .banner_txt{
+          @include font_mix_family($font_family_OS, 1.8, 400, 2.0, #000000);
         }
       }
     }

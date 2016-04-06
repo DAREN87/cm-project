@@ -15,7 +15,7 @@ input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 
 html { font-size: 62.5%; height: 100%; }
 
-body { font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 1.6rem; height: 100%; }
+body { font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 1.6rem; height: 100%; background-color: #fff; color: #1e1e1e; }
 
 h1 { margin: 0; }
 
@@ -23,7 +23,11 @@ a img, fieldset { border: none; }
 
 input, textarea, button { outline: none; }
 
-.container { min-width: 300px; max-width: 1920px; width: 100%; margin: 0 auto; box-shadow: 0 0 87px rgba(142, 142, 142, 0.22); background: #ffffff; }
+.container { min-width: 280px; max-width: 1920px; width: 100%; margin: 0 auto; box-shadow: 0 0 87px rgba(142, 142, 142, 0.22); background-color: #fff; }
+
+.wrapper { width: 100%; margin: 0 auto; }
+
+.inner { width: 96%; max-width: 960px; margin: 0 auto; }
 
 select.error, textarea.error, input.error { color: #e51414 !important; border-color: #e51414 !important; }
 select.error::-moz-placeholder, textarea.error::-moz-placeholder, input.error::-moz-placeholder { color: #e92d28 !important; }
@@ -33,33 +37,29 @@ input.file.error { color: #e51414 !important; }
 
 .errors_block { font-family: "Open Sans", sans-serif; font-size: 10px; line-height: 10px; color: #e51414; position: absolute; right: 10px; bottom: 4px; }
 
-.wrapper { width: 100%; margin: 0 auto; }
-
-.inner { width: 96%; max-width: 960px; margin: 0 auto; }
-
 .no_shadow { box-shadow: none; }
 
 .form_vertical { max-width: 300px; width: 100%; position: relative; margin: 0 auto; }
-.form_vertical .form_input { width: 100%; padding: 14.5px 20px; border: 1px solid #d7d7d7; border-radius: 6px; background-clip: padding-box; background-color: #f5f5f5; box-sizing: border-box; color: #8b8b8b; font-family: "Open Sans", sans-serif; font-size: 14px; font-weight: 600; appearance: none; }
+.form_vertical .form_input { width: 100%; padding: 14.5px 20px; border: 1px solid #d7d7d7; border-radius: 6px; background-clip: padding-box; background-color: #f5f5f5; box-sizing: border-box; color: #8b8b8b; font-family: "Open Sans", sans-serif; font-size: 14px; font-weight: 600; appearance: none; transition: 0.2s ease-out; }
 .form_vertical .form_input::-moz-placeholder { color: #8b8b8b; }
 .form_vertical .form_input::-webkit-input-placeholder { color: #8b8b8b; }
 .form_vertical .form_input:focus { box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); }
-.form_vertical .form_textarea { width: 100%; padding: 14.5px 20px; border: 1px solid #d7d7d7; border-radius: 6px; background-clip: padding-box; background-color: #f5f5f5; box-sizing: border-box; color: #8b8b8b; font-family: "Open Sans", sans-serif; font-size: 14px; font-weight: 600; appearance: none; display: block; height: 110px; resize: none; }
+.form_vertical .form_textarea { width: 100%; padding: 14.5px 20px; border: 1px solid #d7d7d7; border-radius: 6px; background-clip: padding-box; background-color: #f5f5f5; box-sizing: border-box; color: #8b8b8b; font-family: "Open Sans", sans-serif; font-size: 14px; font-weight: 600; appearance: none; transition: 0.2s ease-out; display: block; height: 110px; resize: none; }
 .form_vertical .form_textarea::-moz-placeholder { color: #8b8b8b; }
 .form_vertical .form_textarea::-webkit-input-placeholder { color: #8b8b8b; }
 .form_vertical .form_textarea:focus { box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); }
-.form_vertical .form_button { height: 59px; width: 100%; border: none; border-radius: 6px; background-clip: padding-box; box-shadow: inset 0 -4px 0 #dc7322, inset 0 -5px 2px #fea741; background-image: linear-gradient(bottom, #f58936 0%, #ffba4e 100%); color: #fff; text-shadow: 0 1px 1px #e67f29; font-family: "Open Sans", sans-serif; font-size: 18px; line-height: 18px; font-size: 1.8rem; line-height: 1.8rem; font-weight: 700; text-transform: uppercase; cursor: pointer; margin: 0 auto; display: block; text-align: center; text-decoration: none; appearance: none; }
+.form_vertical .form_button { height: 59px; width: 100%; border: none; border-radius: 6px; background-clip: padding-box; box-shadow: inset 0 -4px 0 #dc7322, inset 0 -5px 2px #fea741; background-image: linear-gradient(bottom, #f58936 0%, #ffba4e 100%); color: #fff; text-shadow: 0 1px 1px #e67f29; font-family: "Open Sans", sans-serif; font-size: 18px; line-height: 18px; font-size: 1.8rem; line-height: 1.8rem; font-weight: 700; text-transform: uppercase; cursor: pointer; margin: 0 auto; display: block; text-align: center; text-decoration: none; white-space: nowrap; overflow: hidden; appearance: none; transition: 0.2s ease-out; }
 .form_vertical .form_button:hover { background-image: linear-gradient(bottom, #f99643 0%, #ffba4e 100%); }
 .form_vertical .form_button:active { background-image: linear-gradient(bottom, #f58936 0%, #fba827 100%); }
 .form_vertical .form_label { position: relative; display: block; margin: 0 auto 15px auto; width: 100%; }
 .form_vertical .form_label.is_last { margin-bottom: 15px; }
 
 .form_horizontal { width: 100%; max-width: 760px; font-size: 0; line-height: 0; letter-spacing: -1px; margin: 0 auto; text-align: center; }
-.form_horizontal .form_input { width: 100%; padding: 14.5px 20px; border: 1px solid #d7d7d7; border-radius: 6px; background-clip: padding-box; background-color: #f5f5f5; box-sizing: border-box; color: #8b8b8b; font-family: "Open Sans", sans-serif; font-size: 14px; font-weight: 600; appearance: none; }
+.form_horizontal .form_input { width: 100%; padding: 14.5px 20px; border: 1px solid #d7d7d7; border-radius: 6px; background-clip: padding-box; background-color: #f5f5f5; box-sizing: border-box; color: #8b8b8b; font-family: "Open Sans", sans-serif; font-size: 14px; font-weight: 600; appearance: none; transition: 0.2s ease-out; }
 .form_horizontal .form_input::-moz-placeholder { color: #8b8b8b; }
 .form_horizontal .form_input::-webkit-input-placeholder { color: #8b8b8b; }
 .form_horizontal .form_input:focus { box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); }
-.form_horizontal .form_button { height: 59px; width: 48.8%; border: none; border-radius: 6px; background-clip: padding-box; box-shadow: inset 0 -4px 0 #dc7322, inset 0 -5px 2px #fea741; background-image: linear-gradient(bottom, #f58936 0%, #ffba4e 100%); color: #fff; text-shadow: 0 1px 1px #e67f29; font-family: "Open Sans", sans-serif; font-size: 18px; line-height: 18px; font-size: 1.8rem; line-height: 1.8rem; font-weight: 700; text-transform: uppercase; cursor: pointer; margin: 0 auto; display: block; text-align: center; text-decoration: none; appearance: none; display: inline-block; vertical-align: top; line-height: normal; }
+.form_horizontal .form_button { height: 59px; width: 48.8%; border: none; border-radius: 6px; background-clip: padding-box; box-shadow: inset 0 -4px 0 #dc7322, inset 0 -5px 2px #fea741; background-image: linear-gradient(bottom, #f58936 0%, #ffba4e 100%); color: #fff; text-shadow: 0 1px 1px #e67f29; font-family: "Open Sans", sans-serif; font-size: 18px; line-height: 18px; font-size: 1.8rem; line-height: 1.8rem; font-weight: 700; text-transform: uppercase; cursor: pointer; margin: 0 auto; display: block; text-align: center; text-decoration: none; white-space: nowrap; overflow: hidden; appearance: none; transition: 0.2s ease-out; display: inline-block; vertical-align: top; line-height: normal; }
 .form_horizontal .form_button:hover { background-image: linear-gradient(bottom, #f99643 0%, #ffba4e 100%); }
 .form_horizontal .form_button:active { background-image: linear-gradient(bottom, #f58936 0%, #fba827 100%); }
 .form_horizontal .form_label { position: relative; margin: 0 2% 0 0; width: 48.8%; display: inline-block; vertical-align: top; letter-spacing: normal; line-height: normal; }
@@ -68,10 +68,9 @@ input.file.error { color: #e51414 !important; }
 .custom-style .fancybox-skin { position: relative; text-shadow: none; border-radius: 10px; background-clip: padding-box; background-color: #fff; border: none; }
 .custom-style.fancybox-opened .fancybox-skin { box-shadow: 0 0 62px #000; }
 
-.hidden_form { display: none; }
-.hidden_form.custom { max-width: 400px; width: 100%; box-sizing: border-box; padding: 45px 35px; position: relative; z-index: 11; }
-.hidden_form.custom .form_wrap_head { font-size: 38px; line-height: 30px; font-size: 3.8rem; line-height: 3rem; font-weight: 700; font-family: "Open Sans", sans-serif; color: #000000; margin-bottom: 20px; }
-.hidden_form.custom .form_wrap_p { font-size: 14px; line-height: 16px; font-size: 1.4rem; line-height: 1.6rem; font-weight: 400; font-family: "Open Sans", sans-serif; color: #000000; margin-bottom: 25px; }
+.hidden_form { display: none; max-width: 400px; width: 100%; box-sizing: border-box; padding: 45px 35px; position: relative; z-index: 11; }
+.hidden_form .form_wrap_head { font-size: 38px; line-height: 30px; font-size: 3.8rem; line-height: 3rem; font-weight: 700; font-family: "Open Sans", sans-serif; color: #000000; margin-bottom: 20px; }
+.hidden_form .form_wrap_p { font-size: 14px; line-height: 16px; font-size: 1.4rem; line-height: 1.6rem; font-weight: 400; font-family: "Open Sans", sans-serif; color: #000000; margin-bottom: 25px; }
 
 .form_wrap { width: 100%; max-width: 410px; padding: 35px 40px; border-radius: 8px; background-clip: padding-box; box-sizing: border-box; background-color: #fff; box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); }
 .form_wrap .form_wrap_p { font-size: 18px; line-height: 25px; font-size: 1.8rem; line-height: 2.5rem; font-weight: 600; font-family: "Open Sans", sans-serif; color: #313131; margin-bottom: 20px; }
@@ -190,33 +189,36 @@ input.file.error { color: #e51414 !important; }
 .footer .footer_cm .convert .convert_logo { display: inline-block; vertical-align: middle; }
 .footer .footer_cm .convert .convert_logo .convert_logo_img { display: block; }
 
-.privacy-policy_div { display: none; max-width: 830px; width: 100%; padding: 35px; margin: 0 auto; box-sizing: border-box; }
-.privacy-policy_div .privacy_p { font-size: 20px; line-height: 24px; font-size: 2rem; line-height: 2.4rem; font-weight: 400; font-family: "Open Sans", sans-serif; color: #262626; margin-bottom: 15px; text-indent: 20px; }
+.privacy_policy { display: none; max-width: 830px; width: 100%; padding: 35px; margin: 0 auto; box-sizing: border-box; }
+.privacy_policy .privacy_p { font-size: 20px; line-height: 24px; font-size: 2rem; line-height: 2.4rem; font-weight: 400; font-family: "Open Sans", sans-serif; color: #262626; margin-bottom: 15px; text-indent: 20px; }
 
-.thank-you { height: 100%; background: #f5f5f5; }
-.thank-you .banner { padding: 50px 0; background: none; }
-.thank-you .banner .banner-b { text-align: center; margin-bottom: 50px; }
-.thank-you .banner .banner-b .head_h1 { font-size: 43px; line-height: 50px; font-size: 4.3rem; line-height: 5rem; font-weight: 400; font-family: "Open Sans", sans-serif; color: #000000; }
-.thank-you .banner .banner_a { position: relative; height: 59px; padding-bottom: 4px; width: 100%; border: none; border-radius: 6px; background-clip: padding-box; box-shadow: inset 0 -4px 0 #dc7322, inset 0 -5px 2px #fea741; background-image: linear-gradient(bottom, #f58936 0%, #ffba4e 100%); color: #fff; text-shadow: 0 1px 1px #e67f29; font-family: "Open Sans", sans-serif; font-size: 18px; font-size: 1.8rem; font-weight: 700; text-transform: uppercase; cursor: pointer; margin: 0; display: block; text-align: center; text-decoration: none; appearance: none; line-height: 59px; max-width: 265px; margin: 0 auto; }
-.thank-you .banner .banner_a:hover { background-image: linear-gradient(bottom, #f99643 0%, #ffba4e 100%); }
-.thank-you .banner .banner_a:active { background-image: linear-gradient(bottom, #f58936 0%, #fba827 100%); }
+.thank_you { height: 100%; background: #f5f5f5; }
+.thank_you .banner { padding: 50px 0; background: none; }
+.thank_you .banner .banner_thanks { text-align: center; margin-bottom: 50px; }
+.thank_you .banner .banner_thanks .banner_h1 { font-size: 43px; line-height: 50px; font-size: 4.3rem; line-height: 5rem; font-weight: 400; font-family: "Open Sans", sans-serif; color: #000000; margin-bottom: 15px; }
+.thank_you .banner .banner_thanks .banner_txt { font-size: 24px; line-height: 30px; font-size: 2.4rem; line-height: 3rem; font-weight: 400; font-family: "Open Sans", sans-serif; color: #000000; }
+.thank_you .banner .banner_a { position: relative; height: 59px; width: 100%; border: none; border-radius: 6px; background-clip: padding-box; box-shadow: inset 0 -4px 0 #dc7322, inset 0 -5px 2px #fea741; background-image: linear-gradient(bottom, #f58936 0%, #ffba4e 100%); color: #fff; text-shadow: 0 1px 1px #e67f29; font-family: "Open Sans", sans-serif; font-size: 18px; font-size: 1.8rem; font-weight: 700; text-transform: uppercase; cursor: pointer; margin: 0; display: block; text-align: center; text-decoration: none; white-space: nowrap; overflow: hidden; appearance: none; transition: 0.2s ease-out; line-height: 59px; max-width: 265px; margin: 0 auto; }
+.thank_you .banner .banner_a:hover { background-image: linear-gradient(bottom, #f99643 0%, #ffba4e 100%); }
+.thank_you .banner .banner_a:active { background-image: linear-gradient(bottom, #f58936 0%, #fba827 100%); }
 
 @media screen and (max-width: 980px) { html { font-size: 52.5%; }
   body { font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 1.4rem; }
-  .privacy-policy_div { padding: 15px; }
-  .thank-you .banner { padding: 50px 0; }
-  .thank-you .banner .banner-b { text-align: center; margin-bottom: 40px; }
-  .thank-you .banner .banner-b .head_h1 { font-size: 35px; line-height: 40px; font-size: 3.5rem; line-height: 4rem; font-weight: 400; font-family: "Open Sans", sans-serif; color: #000000; } }
+  .privacy_policy { padding: 15px; }
+  .thank_you .banner { padding: 50px 0; }
+  .thank_you .banner .banner_thanks { text-align: center; margin-bottom: 40px; }
+  .thank_you .banner .banner_thanks .banner_h1 { font-size: 35px; line-height: 40px; font-size: 3.5rem; line-height: 4rem; font-weight: 400; font-family: "Open Sans", sans-serif; color: #000000; }
+  .thank_you .banner .banner_thanks .banner_txt { font-size: 20px; line-height: 24px; font-size: 2rem; line-height: 2.4rem; font-weight: 400; font-family: "Open Sans", sans-serif; color: #000000; } }
 @media screen and (max-width: 768px) { .form_horizontal { max-width: 300px; width: 100%; margin: 0 auto; }
-  .form_horizontal .form_button { height: 59px; width: 100%; border: none; border-radius: 6px; background-clip: padding-box; box-shadow: inset 0 -4px 0 #dc7322, inset 0 -5px 2px #fea741; background-image: linear-gradient(bottom, #f58936 0%, #ffba4e 100%); color: #fff; text-shadow: 0 1px 1px #e67f29; font-family: "Open Sans", sans-serif; font-size: 18px; line-height: 18px; font-size: 1.8rem; line-height: 1.8rem; font-weight: 700; text-transform: uppercase; cursor: pointer; margin: 0 auto; display: block; text-align: center; text-decoration: none; appearance: none; display: block; }
+  .form_horizontal .form_button { height: 59px; width: 100%; border: none; border-radius: 6px; background-clip: padding-box; box-shadow: inset 0 -4px 0 #dc7322, inset 0 -5px 2px #fea741; background-image: linear-gradient(bottom, #f58936 0%, #ffba4e 100%); color: #fff; text-shadow: 0 1px 1px #e67f29; font-family: "Open Sans", sans-serif; font-size: 18px; line-height: 18px; font-size: 1.8rem; line-height: 1.8rem; font-weight: 700; text-transform: uppercase; cursor: pointer; margin: 0 auto; display: block; text-align: center; text-decoration: none; white-space: nowrap; overflow: hidden; appearance: none; transition: 0.2s ease-out; display: block; }
   .form_horizontal .form_button:hover { background-image: linear-gradient(bottom, #f99643 0%, #ffba4e 100%); }
   .form_horizontal .form_button:active { background-image: linear-gradient(bottom, #f58936 0%, #fba827 100%); }
   .form_horizontal .form_label { display: block; margin: 0 auto 15px auto; width: 100%; }
   .form_horizontal .form_label.is_last { margin: 0 0 15px 0; }
-  .privacy-policy_div { padding: 10px; }
-  .thank-you .banner { padding: 40px 0; }
-  .thank-you .banner .banner-b { margin-bottom: 30px; }
-  .thank-you .banner .banner-b .head_h1 { font-size: 30px; line-height: 34px; font-size: 3rem; line-height: 3.4rem; font-weight: 400; font-family: "Open Sans", sans-serif; color: #000000; } }
+  .privacy_policy { padding: 10px; }
+  .thank_you .banner { padding: 40px 0; }
+  .thank_you .banner .banner_thanks { margin-bottom: 30px; }
+  .thank_you .banner .banner_thanks .banner_h1 { font-size: 30px; line-height: 34px; font-size: 3rem; line-height: 3.4rem; font-weight: 400; font-family: "Open Sans", sans-serif; color: #000000; }
+  .thank_you .banner .banner_thanks .banner_txt { font-size: 18px; line-height: 20px; font-size: 1.8rem; line-height: 2rem; font-weight: 400; font-family: "Open Sans", sans-serif; color: #000000; } }
 .animated { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
 
 .animated.infinite { -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }

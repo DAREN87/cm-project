@@ -1,7 +1,3 @@
-// responsive example, edit or remove
-$break-small: 500px;
-$break-large: 1180px;
-
 %clr{
   &:before,
   &:after {
@@ -22,7 +18,7 @@ $break-large: 1180px;
   }
 }
 // Convert mixins
-@mixin font_mix($family, $size:1.6, $weight:normal, $line_height:1.6, $col:#fff){
+@mixin font_mix_family($family, $size:1.6, $weight:normal, $line_height:1.6, $col:#fff){
   font-size:   ($size * 10) + px;
   line-height: ($line_height * 10) + px;
   font-size:   $size + rem;
@@ -31,15 +27,13 @@ $break-large: 1180px;
   font-family: $family;
   color: $col;
 }
-@mixin width($width){
-  width: $width;
-  margin: 0 auto;
-}
-@mixin width_max($width_min, $width_max){
-  min-width: $width_min;
-  max-width: $width_max;
-  width: 100%;
-  margin: 0 auto;
+@mixin font_mix($size:1.6, $weight:normal, $line_height:1.6, $col:#fff){
+  font-size:   ($size * 10) + px;
+  line-height: ($line_height * 10) + px;
+  font-size:   $size + rem;
+  line-height: $line_height + rem;
+  font-weight: $weight;
+  color: $col;
 }
 // button
 @mixin button_color($width, $fontSize){
@@ -79,7 +73,6 @@ $break-large: 1180px;
 @mixin button_a($width, $fontSize){
   position: relative;
   height: 59px;
-  padding-bottom: 4px;
   width: $width;
   border: none;
   border-radius: 6px;

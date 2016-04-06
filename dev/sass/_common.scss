@@ -50,6 +50,8 @@ body{
     size: 1.6rem;
   }
   height: 100%;
+  background-color: #fff;
+  color: #1e1e1e;
 }
 // resets
 h1{
@@ -62,9 +64,21 @@ input, textarea, button {
   outline:none;
 }
 .container{
-  @include width_max($width_min, $width_max);
+  min-width: $width_min;
+  max-width: $width_max;
+  width: 100%;
+  margin: 0 auto;
   box-shadow: 0 0 87px rgba(142,142,142,.22);
-  background: #ffffff;
+  background-color: #fff;
+}
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+}
+.inner{
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 select.error, textarea.error, input.error {
   color: #e51414 !important;
