@@ -23,7 +23,6 @@
 $width_max: 1920px;
 $width_min: 280px;
 
-$default_font_family: Arial, Helvetica, sans-serif ;
 $font_family_A: Arial, Helvetica, sans-serif ;
 $font_family_OS: 'Open Sans', sans-serif;
 $font_family_P: 'Panton';
@@ -62,6 +61,9 @@ a img,fieldset{
 }
 input, textarea, button {
   outline:none;
+}
+a:hover{
+  text-decoration: none;
 }
 .container{
   min-width: $width_min;
