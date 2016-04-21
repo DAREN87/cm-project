@@ -60,6 +60,7 @@ if(isset($_GET['cm_title'])){
 <html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>CM Project</title>
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -323,7 +324,7 @@ if(isset($_GET['cm_title'])){
     <p class="privacy_p">В случае отзыва согласия на обработку своих персональных данных мы обязуемся удалить Ваши персональные данные в срок не позднее 3 рабочих дней.</p>
 </div>
 <link rel="stylesheet" href="./js/libs/css/libs.min.css" property="stylesheet">
-<!--[if lte IE 8]><script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script><![endif]-->
+<script src="https://yastatic.net/browser-updater/v1/script.js"></script>
 <script src="./js/libs/jquery.min.js"></script>
 <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="./js/libs/jquery.fancybox.pack.js"></script>
