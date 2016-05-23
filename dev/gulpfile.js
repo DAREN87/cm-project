@@ -37,6 +37,8 @@
   gulp.task('scriptsMain', function() {
     return gulp.src('./js/*.js')
       .pipe(uncomment({removeEmptyLines: true}))
+      .pipe(concat('main.js'))
+      .pipe(gulp.dest('../js'))
       .pipe(concat('main.min.js'))
       .pipe(uglify())
       .pipe(size({title: 'size of main.min.js'}))
