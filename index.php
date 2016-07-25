@@ -106,7 +106,7 @@ if(isset($_GET['cm_title'])){
                         <li class="form_li">Составление сметы лечения</li>
                     </ul>
                     <label class="form_label is_last">
-                        <input type="text" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
+                        <input type="tel" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
                     </label>
                     <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
                     <input type="hidden" name="utm_source" class="input_hid" value="<?php echo($utm_source);?>" />
@@ -153,7 +153,7 @@ if(isset($_GET['cm_title'])){
                 </div>
                 <form action="./handlers/send-form-number.php" class="form_horizontal" method="post">
                     <label class="form_label is_last">
-                        <input type="text" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
+                        <input type="tel" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
                     </label>
                     <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
                     <input type="hidden" name="utm_source" class="input_hid" value="<?php echo($utm_source);?>" />
@@ -260,7 +260,7 @@ if(isset($_GET['cm_title'])){
                     <p class="form_wrap_p">Остались вопросы по лечению зубов?<br> <span class="big">Задайте их нам и получите бесплатную консультацию специалиста!</span></p>
                     <form action="./handlers/send-form-contact.php" class="form_vertical" method="post">
                         <label class="form_label">
-                            <input type="text" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
+                            <input type="tel" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
                         </label>
                         <label class="form_label is_last">
                             <textarea name="msg" class="form_textarea" required placeholder="Чем мы можем вам помочь?"></textarea>
@@ -303,7 +303,7 @@ if(isset($_GET['cm_title'])){
             <input type="text" name="name" class="form_input" required value="" placeholder="Ваше имя"/>
         </label>
         <label class="form_label is_last">
-            <input type="text" name="number" maxlength="18" class="form_input" required value="" placeholder="Ваш телефон"/>
+            <input type="tel" name="number" maxlength="18" class="form_input" required value="" placeholder="Ваш телефон"/>
         </label>
         <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
         <input type="hidden" name="utm_source" class="input_hid" value="<?php echo($utm_source);?>" />

@@ -37,7 +37,7 @@ select.error::-webkit-input-placeholder, textarea.error::-webkit-input-placehold
 
 input.file.error { color: #e51414 !important; }
 
-.errors_block { font-family: "Open Sans", sans-serif; font-size: 10px; line-height: 10px; color: #e51414; position: absolute; right: 10px; bottom: 4px; }
+.errors_block { font-family: "Open Sans", sans-serif; font-size: 10px; line-height: 12px; text-align: center; color: #fff; position: absolute; right: 0; bottom: -5px; background-color: #e51414; width: 100%; border-radius: 0 0 2px 2px; }
 
 .no_shadow { box-shadow: none; }
 
