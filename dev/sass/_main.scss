@@ -89,11 +89,12 @@
       font-weight: 400;
       text-decoration: none;
       padding: 6px 25px 6px 10px;
+      transition: 0.2s ease-out;
 
       &:after{
         content: '';
         display: block;
-        background: url("../img/fancybox_close.svg") no-repeat;
+        background: url("../img/close.svg") no-repeat 0 0;
         background-size: 100% 100%;
         width: 10px;
         height: 10px;
@@ -101,6 +102,15 @@
         right: 10px;
         top: 50%;
         margin-top: -5px;
+        transition: 0.2s ease-out;
+      }
+      &:hover{
+        color: #f26526;
+
+        &:after{
+          background: url("../img/close_h.svg") no-repeat 0 0;
+          background-size: 100% 100%;
+        }
       }
     }
   }
