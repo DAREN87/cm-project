@@ -13,7 +13,7 @@ input::-moz-focus-inner { border: 0; padding: 0; }
 
 input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 
-html { font-size: 62.5%; height: 100%; }
+html { font-size: 62.5%; height: 100%; text-size-adjust: 100%; }
 
 body { font-family: "Open Sans", sans-serif; font-weight: normal; font-size: 1.6rem; height: 100%; background-color: #fff; color: #1e1e1e; }
 
@@ -68,8 +68,10 @@ input.file.error { color: #e51414 !important; }
 .form_horizontal .form_label.is_last { margin: 0 2% 0 0; }
 
 .custom-style .fancybox-skin { position: relative; text-shadow: none; border-radius: 10px; background-clip: padding-box; background-color: #fff; border: none; }
-.custom-style .fancybox-skin .my-fancybox-close { position: absolute; border-radius: 4px 4px 0 0; background-clip: padding-box; background-color: #d2d2d2; box-shadow: inset 0 -4px 1px rgba(0, 0, 0, 0.05); top: -26px; right: 5px; display: inline-block; color: #212121; font-size: 14px; line-height: 14px; font-weight: 400; text-decoration: none; padding: 6px 25px 6px 10px; }
-.custom-style .fancybox-skin .my-fancybox-close:after { content: ''; display: block; background: url("../img/fancybox_close.svg") no-repeat; background-size: 100% 100%; width: 10px; height: 10px; position: absolute; right: 10px; top: 50%; margin-top: -5px; }
+.custom-style .fancybox-skin .my-fancybox-close { position: absolute; border-radius: 4px 4px 0 0; background-clip: padding-box; background-color: #d2d2d2; box-shadow: inset 0 -4px 1px rgba(0, 0, 0, 0.05); top: -26px; right: 5px; display: inline-block; color: #212121; font-size: 14px; line-height: 14px; font-weight: 400; text-decoration: none; padding: 6px 25px 6px 10px; transition: 0.2s ease-out; }
+.custom-style .fancybox-skin .my-fancybox-close:after { content: ''; display: block; background: url("../img/close.svg") no-repeat 0 0; background-size: 100% 100%; width: 10px; height: 10px; position: absolute; right: 10px; top: 50%; margin-top: -5px; transition: 0.2s ease-out; }
+.custom-style .fancybox-skin .my-fancybox-close:hover { color: #f26526; }
+.custom-style .fancybox-skin .my-fancybox-close:hover:after { background: url("../img/close_h.svg") no-repeat 0 0; background-size: 100% 100%; }
 .custom-style.fancybox-opened .fancybox-skin { box-shadow: 0 0 62px #000; }
 
 .hidden_form { display: none; max-width: 400px; width: 100%; box-sizing: border-box; padding: 45px 35px; position: relative; z-index: 11; }
@@ -191,7 +193,7 @@ input.file.error { color: #e51414 !important; }
 .footer .footer_cm { float: right; text-align: left; }
 .footer .footer_cm .convert .convert_p { text-align: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; vertical-align: middle; font-size: 14px; line-height: 16px; font-size: 1.4rem; line-height: 1.6rem; font-weight: 400; color: #000000; padding-right: 15px; }
 .footer .footer_cm .convert .convert_logo { display: inline-block; vertical-align: middle; }
-.footer .footer_cm .convert .convert_logo .convert_logo_img { display: block; }
+.footer .footer_cm .convert .convert_logo .convert_logo_img { display: block; width: 100px; }
 
 .privacy_policy { display: none; max-width: 830px; width: 100%; padding: 35px; margin: 0 auto; box-sizing: border-box; }
 .privacy_policy .privacy_p { font-size: 20px; line-height: 24px; font-size: 2rem; line-height: 2.4rem; font-weight: 400; color: #262626; margin-bottom: 15px; text-indent: 20px; }
