@@ -57,7 +57,7 @@ if(isset($_GET['cm_title'])){
 }
 ?>
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
