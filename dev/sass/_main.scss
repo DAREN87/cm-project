@@ -1,4 +1,3 @@
-
 .no_shadow{
   box-shadow: none;
 }
@@ -33,7 +32,6 @@
 }
 .form_horizontal{
   width: 100%;
-  max-width: 760px;
   font-size: 0;
   line-height: 0;
   letter-spacing: -1px;
@@ -124,8 +122,6 @@
   width: 100%;
   box-sizing: border-box;
   padding: 45px 35px;
-  position: relative;
-  z-index: 11;
 
   .form_wrap_head{
     @include font_mix(3.8, 700, 3.0, #000000);
@@ -159,12 +155,10 @@
   }
 }
 .header{
-  position: relative;
   padding: 15px 0;
 
   .header_logo{
     float: left;
-    position: relative;
     margin-top: 18px;
     width: 129px;
 
@@ -186,11 +180,9 @@
   }
   .header_right{
     float: right;
-    position: relative;
     box-sizing: border-box;
   }
   .header_right_info{
-    position: relative;
     display: inline-block;
     vertical-align: middle;
     margin-right: 45px;
