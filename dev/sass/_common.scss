@@ -32,7 +32,6 @@ $font_family_button: $font_family_OS;
 $name: animated;
 // END variables
 
-*{margin:0;padding:0; }
 @include iphone{*{-webkit-text-size-adjust: none;}}
 button::-moz-focus-inner { padding: 0; border: 0 }
 input::-moz-focus-inner { border: 0; padding: 0;}
@@ -42,6 +41,7 @@ html{
   font-size: 62.5%;
   height: 100%;
   text-size-adjust: 100%;
+  box-sizing: border-box;
 }
 body{
   font: {
@@ -53,6 +53,7 @@ body{
   background-color: #fff;
   color: #1e1e1e;
 }
+*{margin:0;padding:0;box-sizing: inherit;}
 // resets
 h1{
   margin: 0; //normalize style reset
