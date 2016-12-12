@@ -32,7 +32,6 @@
   }
 }
 @media screen and (max-width: 768px) {
-
   .form_horizontal{
     max-width: 300px;
     width: 100%;
@@ -75,5 +74,8 @@
   }
 }
 @media screen and (max-width: 600px) {
-
+  .hidden_form{
+    min-width: inherit;
+    padding: 20px;
+  }
 }

@@ -5,7 +5,6 @@ $utm_source = 'Без utm_source';
 $utm_campaign = 'Без utm_campaign';
 $utm_term = 'Без utm_term';
 $utm_content = 'Без utm_content';
-$cm_title = 'Без cm_title';
 
 if(isset($_GET['utm_medium'])){
     $utm_medium = urldecode($_GET['utm_medium']);
@@ -86,7 +85,7 @@ if(isset($_GET['cm_title'])){
                     Звоните сейчас</div>
                 <div class="header_right_contact">
                     <a class="header_phone" href="tel:+73512003682">+7 (351) 200-36-82</a><br>
-                    <a class="header_callback fancybox js_btn_custom_form" href="#custom" data-head="Оставьте заявку" data-position="Бесплатная консультация" data-btn-txt="Заказать консультацию">Бесплатная консультация</a>
+                    <a class="header_callback fancybox js_btn_custom_form" href="#custom" data-head="Оставьте заявку" data-txt="Мы свяжемся с вами в<br> течение 5 минут" data-position="Бесплатная консультация" data-btn-txt="Заказать консультацию">Бесплатная консультация</a>
                     <p class="header_time">с 9 до 21 без выходных</p>
                 </div>
             </div>
@@ -114,10 +113,10 @@ if(isset($_GET['cm_title'])){
                     <input type="hidden" name="utm_campaign" class="input_hid" value="<?php echo($utm_campaign);?>" />
                     <input type="hidden" name="utm_content" class="input_hid" value="<?php echo($utm_content);?>" />
                     <input type="hidden" name="utm_term" class="input_hid" value="<?php echo($utm_term);?>" />
-                    <input type="hidden" name="cm_title" class="input_hid" value="<?php echo($cm_title);?>" />
                     <input type="hidden" name="position" class="input_hid" value="Бесплатный осмотр" />
                     <input type="hidden" name="mail" class="input_hid" value="" />
                     <input type="submit" class="form_button" value="Бесплатный осмотр" />
+                    <button type="submit" class="form_button">Бесплатный осмотр</button>
                     <p class="recall">Перезвоним через 5 секунд</p>
                 </form>
             </div>
@@ -161,10 +160,9 @@ if(isset($_GET['cm_title'])){
                     <input type="hidden" name="utm_campaign" class="input_hid" value="<?php echo($utm_campaign);?>" />
                     <input type="hidden" name="utm_content" class="input_hid" value="<?php echo($utm_content);?>" />
                     <input type="hidden" name="utm_term" class="input_hid" value="<?php echo($utm_term);?>" />
-                    <input type="hidden" name="cm_title" class="input_hid" value="<?php echo($cm_title);?>" />
                     <input type="hidden" name="position" class="input_hid" value="Узнайте все акции и скидки на имплантацию" />
                     <input type="hidden" name="mail" class="input_hid" value="" />
-                    <input type="submit" class="form_button md" value="Получить скидку" />
+                    <button type="submit" class="form_button md">Получить скидку</button>
                 </form>
                 <div class="form_wrap_stock">
                     <p class="stock_txt">До конца акции:</p>
@@ -271,10 +269,9 @@ if(isset($_GET['cm_title'])){
                         <input type="hidden" name="utm_campaign" class="input_hid" value="<?php echo($utm_campaign);?>" />
                         <input type="hidden" name="utm_content" class="input_hid" value="<?php echo($utm_content);?>" />
                         <input type="hidden" name="utm_term" class="input_hid" value="<?php echo($utm_term);?>" />
-                        <input type="hidden" name="cm_title" class="input_hid" value="<?php echo($cm_title);?>" />
                         <input type="hidden" name="position" class="input_hid" value="Вопрос посетителя" />
                         <input type="hidden" name="mail" class="input_hid" value="" />
-                        <input type="submit" class="form_button md" value="Задать вопрос" />
+                        <button type="submit" class="form_button md">Задать вопрос</button>
                     </form>
                 </div>
             </div>
@@ -298,7 +295,7 @@ if(isset($_GET['cm_title'])){
 </div>
 <div class="hidden_form" id="custom">
     <h2 class="form_wrap_head js_custom_head">&nbsp;</h2>
-    <p class="form_wrap_p">И мы свяжемся с Вами в ближайшее время</p>
+    <p class="form_wrap_p js_custom_txt">&nbsp;</p>
     <form action="./handlers/send-form.php" class="form_vertical" method="post">
         <label class="form_label">
             <input type="text" name="name" class="form_input" required value="" placeholder="Ваше имя"/>
@@ -311,10 +308,9 @@ if(isset($_GET['cm_title'])){
         <input type="hidden" name="utm_campaign" class="input_hid" value="<?php echo($utm_campaign);?>" />
         <input type="hidden" name="utm_content" class="input_hid" value="<?php echo($utm_content);?>" />
         <input type="hidden" name="utm_term" class="input_hid" value="<?php echo($utm_term);?>" />
-        <input type="hidden" name="cm_title" class="input_hid" value="<?php echo($cm_title);?>" />
         <input type="hidden" name="position" class="input_hid js_custom_position" value="" />
         <input type="hidden" name="mail" class="input_hid" value="" />
-        <input type="submit" class="form_button js_custom_btn" value="Оставить заявку" />
+        <button type="submit" class="form_button js_custom_btn">Оставить заявку</button>
     </form>
 </div>
 <div class="privacy_policy" id="privacy">

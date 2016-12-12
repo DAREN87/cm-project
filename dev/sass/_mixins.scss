@@ -38,6 +38,7 @@
 // button
 @mixin button_color($width, $fontSize){
   height: 59px;
+  padding: 0 15px;
   width: $width;
   border: none;
   border-radius: 6px;
@@ -58,8 +59,6 @@
   display: block;
   text-align: center;
   text-decoration: none;
-  white-space: nowrap;
-  overflow: hidden;
   appearance: none;
   transition: 0.2s ease-out;
 
@@ -72,7 +71,7 @@
 }
 @mixin button_a($width, $fontSize){
   position: relative;
-  height: 59px;
+  padding: 10px 15px;
   width: $width;
   border: none;
   border-radius: 6px;
@@ -91,8 +90,6 @@
   display: block;
   text-align: center;
   text-decoration: none;
-  white-space: nowrap;
-  overflow: hidden;
   appearance: none;
   transition: 0.2s ease-out;
   line-height: 59px;
