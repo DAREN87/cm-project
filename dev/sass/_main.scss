@@ -650,16 +650,17 @@
 }
 .privacy_policy{
   display: none;
-  max-width: 830px;
+  max-width: 960px;
   width: 100%;
-  padding: 35px;
-  margin: 0 auto;
-  box-sizing: border-box;
+  padding: 30px;
 
   .privacy_p{
     @include font_mix(2.0, 400, 2.4, #262626);
     margin-bottom: 15px;
-    text-indent: 20px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 }
 .thank_you{
