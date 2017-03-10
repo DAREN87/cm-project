@@ -80,10 +80,10 @@ input.file.error { color: #e51414 !important; }
 .hidden_form .form_vertical { max-width: 100%; }
 
 .header { padding: 15px 0; }
-.header .header_logo { float: left; margin-top: 18px; width: 129px; }
-.header .header_logo .header_logo_a { display: block; width: 100%; text-decoration: none; }
-.header .header_logo .header_logo_a .header_logo_img { display: block; width: 100%; }
-.header .header_desc { font-size: 18px; line-height: 18px; font-size: 1.8rem; line-height: 1.8rem; font-weight: 400; color: #606f6e; float: left; margin: 18px 0 0 3%; }
+.header .header_logo { float: left; width: 129px; }
+.header .header_logo .logo_a { display: block; width: 100%; text-decoration: none; }
+.header .header_logo .logo_a .logo_img { display: block; width: 100%; }
+.header .header_desc { font-size: 18px; line-height: 18px; font-size: 1.8rem; line-height: 1.8rem; font-weight: 400; color: #606f6e; float: left; margin: 0 0 0 3%; }
 .header .header_right { float: right; box-sizing: border-box; }
 .header .header_right_info { display: inline-block; vertical-align: middle; margin-right: 45px; font-size: 20px; line-height: 20px; font-size: 2rem; line-height: 2rem; font-weight: 400; color: #313131; }
 .header .header_right_info .big { font-size: 24px; line-height: 24px; font-size: 2.4rem; line-height: 2.4rem; font-weight: 700; color: #ed822f; display: block; }

@@ -125,15 +125,14 @@
 
   .header_logo{
     float: left;
-    margin-top: 18px;
     width: 129px;
 
-    .header_logo_a{
+    .logo_a{
       display: block;
       width: 100%;
       text-decoration: none;
 
-      .header_logo_img{
+      .logo_img{
         display: block;
         width: 100%;
       }
@@ -142,7 +141,7 @@
   .header_desc{
     @include font_mix(1.8, 400, 1.8, #606f6e);
     float: left;
-    margin: 18px 0 0 3%;
+    margin: 0 0 0 3%;
   }
   .header_right{
     float: right;

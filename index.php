@@ -75,8 +75,8 @@ if(isset($_GET['cm_title'])){
     <header class="wrapper header" id="block_1">
         <div class="inner clearfix">
             <div class="header_logo">
-                <a href="./" class="header_logo_a">
-                    <img class="header_logo_img" src="./img/logo.png" alt=""/>
+                <a href="./" class="logo_a">
+                    <img class="logo_img" src="./img/logo.png" alt=""/>
                 </a>
             </div>
             <p class="header_desc">Сеть стоматологических<br> клиник</p>
