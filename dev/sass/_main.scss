@@ -648,13 +648,13 @@
     }
   }
 }
-.privacy_policy{
+.popup_info{
   display: none;
   max-width: 960px;
   width: 100%;
   padding: 30px;
 
-  .privacy_p{
+  .info_p{
     @include font_mix(2.0, 400, 2.4, #262626);
     margin-bottom: 15px;
 
