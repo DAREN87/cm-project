@@ -38,12 +38,12 @@ if(isset($_GET['utm_term'])){
 } else{
     $utm_term = 'Без utm_term';
 }
-if(isset($_SESSION['utm_content'])) {
-    $utm_content = $_SESSION['utm_content'];
-} elseif(isset($_GET['utm_content'])){
+if(isset($_GET['utm_content'])){
     $utm_content = urldecode($_GET['utm_content']);
     $_SESSION['utm_content'] = urldecode($_GET['utm_content']);
-}else{
+}elseif(isset($_SESSION['utm_content'])) {
+    $utm_content = $_SESSION['utm_content'];
+} else{
     $utm_content = 'Без utm_content';
 }
 ?>
