@@ -313,9 +313,9 @@ if(isset($_GET['utm_content'])){
     <p class="info_p">В случае отзыва согласия на обработку своих персональных данных мы обязуемся удалить Ваши персональные данные в срок не позднее 3 рабочих дней.</p>
 </div>
 <link rel="stylesheet" href="./js/libs/css/libs.min.css" property="stylesheet">
-<script src="https://yastatic.net/browser-updater/v1/script.js"></script>
+<script src="//yastatic.net/browser-updater/v1/script.js"></script>
 <script src="./js/libs/jquery.min.js"></script>
-<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="./js/libs/jquery.fancybox.pack.js"></script>
 <script src="./js/libs/jquery.bxslider.min.js"></script>
 <script src="./js/libs/jquery.inputmask.bundle.min.js"></script>
