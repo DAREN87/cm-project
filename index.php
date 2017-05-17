@@ -277,7 +277,7 @@ if(isset($_GET['utm_content'])){
             <div class="footer_cm">
                 <div class="convert">
                     <p class="convert_p">Сделано в</p>
-                    <a href="http://convertmonster.ru/landing-page/?utm_source=cm-project&amp;utm_medium=footer&amp;utm_campaign=landing" class="convert_logo" title="Создано в Convert Monster" target="_blank">
+                    <a href="//convertmonster.ru/landing-page/?utm_source=cm-project&amp;utm_medium=footer&amp;utm_campaign=landing" class="convert_logo" title="Создано в Convert Monster" target="_blank">
                         <img class="convert_logo_img" src="./img/convert.png" alt="">
                     </a>
                 </div>
