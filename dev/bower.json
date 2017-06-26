@@ -20,7 +20,7 @@
   "dependencies": {
     "jquery": "^2.2.4",
     "bxslider-4": "^4.2.5",
-    "fancybox": "fancyBox#^2.1.5",
+    "fancybox": "^3.1.20",
     "jquery.inputmask": "^3.2.7",
     "jquery-validation": "jquery.validate#^1.13.0"
   },
@@ -39,14 +39,8 @@
     },
     "fancybox": {
       "main": [
-        "source/jquery.fancybox.css",
-        "source/blank.gif",
-        "source/fancybox_loading.gif",
-        "source/fancybox_loading@2x.gif",
-        "source/fancybox_overlay.png",
-        "source/fancybox_sprite.png",
-        "source/fancybox_sprite@2x.png",
-        "source/jquery.fancybox.pack.js"
+        "dist/jquery.fancybox.min.css",
+        "dist/jquery.fancybox.min.js"
       ]
     },
     "jquery.inputmask": {

@@ -77,7 +77,7 @@ if(isset($_GET['utm_content'])){
                     Звоните сейчас</div>
                 <div class="header_right_contact">
                     <a class="header_phone" href="tel:+73512003682">+7 (351) 200-36-82</a><br>
-                    <a class="header_callback fancybox js_btn_custom_form" href="#custom" data-head="Оставьте заявку" data-txt="Мы свяжемся с вами в<br> течение 5 минут" data-position="Бесплатная консультация" data-btn-txt="Заказать консультацию">Бесплатная консультация</a>
+                    <a class="header_callback js_btn_custom_form" data-fancybox href="#custom" data-head="Оставьте заявку" data-txt="Мы свяжемся с вами в<br> течение 5 минут" data-position="Бесплатная консультация" data-btn-txt="Заказать консультацию">Бесплатная консультация</a>
                     <p class="header_time">с 9 до 21 без выходных</p>
                 </div>
             </div>
@@ -272,7 +272,7 @@ if(isset($_GET['utm_content'])){
     <footer class="wrapper footer" id="block_39">
         <div class="inner clearfix">
             <div class="footer_info">
-                <a class="footer_a fancybox" href="#privacy">Политика конфиденциальности</a>
+                <a class="footer_a" data-fancybox href="#privacy">Политика конфиденциальности</a>
             </div>
             <div class="footer_cm">
                 <div class="convert">
@@ -316,7 +316,7 @@ if(isset($_GET['utm_content'])){
 <script src="//yastatic.net/browser-updater/v1/script.js"></script>
 <script src="./js/libs/jquery.min.js"></script>
 <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-<script src="./js/libs/jquery.fancybox.pack.js"></script>
+<script src="./js/libs/jquery.fancybox.min.js"></script>
 <script src="./js/libs/jquery.bxslider.min.js"></script>
 <script src="./js/libs/jquery.inputmask.bundle.min.js"></script>
 <script src="./js/libs/jquery.validate.min.js"></script>
