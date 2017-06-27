@@ -19,7 +19,7 @@ body { font-family: "Open Sans", sans-serif; font-weight: normal; font-size: 1.6
 
 h1 { margin: 0; }
 
-a img, fieldset { border: none; }
+a, img, fieldset { border: none; outline: none; }
 
 input, textarea, button { outline: none; }
 

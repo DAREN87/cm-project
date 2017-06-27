@@ -58,8 +58,9 @@ body{
 h1{
   margin: 0; //normalize style reset
 }
-a img,fieldset{
+a, img, fieldset{
   border:none;
+  outline:none;
 }
 input, textarea, button {
   outline:none;
