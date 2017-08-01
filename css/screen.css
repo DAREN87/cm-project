@@ -193,9 +193,9 @@ input.file.error { color: #e51414 !important; }
 .footer .footer_cm .convert .convert_logo { display: inline-block; vertical-align: middle; }
 .footer .footer_cm .convert .convert_logo .convert_logo_img { display: block; width: 100px; }
 
-.popup_info { display: none; max-width: 960px; width: 100%; padding: 30px; }
-.popup_info .info_p { font-size: 20px; line-height: 24px; font-size: 2rem; line-height: 2.4rem; font-weight: 400; color: #262626; margin-bottom: 15px; }
-.popup_info .info_p:last-child { margin-bottom: 0; }
+.popup_info { display: none; max-width: 960px; width: 100%; padding: 30px !important; }
+.popup_info .info_p { font-size: 20px; line-height: 24px; font-size: 2rem; line-height: 2.4rem; font-weight: 400; color: #262626; margin-top: 15px; }
+.popup_info .info_p:first-child { margin-top: 0; }
 
 .thank_you { height: 100%; background: #f5f5f5; }
 .thank_you .banner { padding: 50px 0; background: none; }
@@ -208,7 +208,7 @@ input.file.error { color: #e51414 !important; }
 
 @media screen and (max-width: 980px) { html { font-size: 52.5%; }
   body { font-size: 1.4rem; }
-  .popup_info { padding: 15px; }
+  .popup_info { padding: 15px !important; }
   .thank_you .banner { padding: 50px 0; }
   .thank_you .banner .banner_thanks { text-align: center; margin-bottom: 40px; }
   .thank_you .banner .banner_thanks .banner_h1 { font-size: 35px; line-height: 40px; font-size: 3.5rem; line-height: 4rem; font-weight: 400; color: #000000; }
@@ -219,12 +219,12 @@ input.file.error { color: #e51414 !important; }
   .form_horizontal .form_button:active { background-image: linear-gradient(bottom, #f58936 0%, #fba827 100%); }
   .form_horizontal .form_label { display: block; margin: 0 auto 15px auto; width: 100%; }
   .form_horizontal .form_label.is_last { margin: 0 0 15px 0; }
-  .popup_info { padding: 10px; }
+  .popup_info { padding: 10px !important; }
   .thank_you .banner { padding: 40px 0; }
   .thank_you .banner .banner_thanks { margin-bottom: 30px; }
   .thank_you .banner .banner_thanks .banner_h1 { font-size: 30px; line-height: 34px; font-size: 3rem; line-height: 3.4rem; font-weight: 400; color: #000000; }
   .thank_you .banner .banner_thanks .banner_txt { font-size: 18px; line-height: 20px; font-size: 1.8rem; line-height: 2rem; font-weight: 400; color: #000000; } }
-@media screen and (max-width: 600px) { .hidden_form { min-width: inherit; padding: 20px; } }
+@media screen and (max-width: 600px) { .hidden_form { min-width: inherit; padding: 20px !important; } }
 .animated { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
 
 .animated.infinite { -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
