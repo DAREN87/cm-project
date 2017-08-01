@@ -67,12 +67,14 @@ input.file.error { color: #e51414 !important; }
 .form_horizontal .form_label { position: relative; margin: 0 2% 0 0; width: 48.8%; display: inline-block; vertical-align: top; letter-spacing: normal; line-height: normal; }
 .form_horizontal .form_label.is_last { margin: 0 2% 0 0; }
 
-.custom-style .fancybox-skin { position: relative; text-shadow: none; border-radius: 5px; background-clip: padding-box; background-color: #fff; border: none; }
-.custom-style .fancybox-skin .my-fancybox-close { position: absolute; background: url("../img/fancybox_close.svg") no-repeat 0 0; background-size: 100% 100%; width: 14px; height: 14px; top: -24px; right: 0; display: inline-block; transition: 0.2s ease-out; }
-.custom-style .fancybox-skin .my-fancybox-close:hover { background: url("../img/fancybox_close_h.svg") no-repeat 0 0; background-size: 100% 100%; }
-.custom-style.fancybox-opened .fancybox-skin { box-shadow: 0 0 62px #000; }
+.custom-style .fancybox-slide > * { padding: 0; border-radius: 6px; overflow: visible; }
+.custom-style .fancybox-close-small { background: url("../img/fancybox_close.svg") no-repeat 0 0; background-size: 100% 100%; width: 14px; height: 14px; top: -24px; right: 0; display: inline-block; transition: 0.2s ease-out; opacity: 0.6; }
+.custom-style .fancybox-close-small:hover { opacity: 1; }
+.custom-style .fancybox-close-small:after { display: none; }
 
-.hidden_form { display: none; max-width: 400px; min-width: 400px; width: 100%; padding: 30px; text-align: center; }
+.fancybox-is-open .fancybox-bg { background: #000 !important; opacity: 0.6 !important; }
+
+.hidden_form { display: none; max-width: 400px; min-width: 400px; width: 100%; padding: 30px !important; text-align: center !important; }
 .hidden_form .form_wrap_head { font-size: 30px; line-height: 30px; font-size: 3rem; line-height: 3rem; font-weight: 400; color: #30242c; margin-bottom: 20px; }
 .hidden_form .form_wrap_p { font-size: 18px; line-height: 20px; font-size: 1.8rem; line-height: 2rem; font-weight: 400; color: #30242c; margin-bottom: 25px; }
 .hidden_form.hidden { display: none; }

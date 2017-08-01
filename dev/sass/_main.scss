@@ -64,42 +64,41 @@
 }
 .custom-style{
 
-  .fancybox-skin {
-    position: relative;
-    text-shadow: none;
-    border-radius: 5px;
-    background-clip: padding-box;
-    background-color: #fff;
-    border: none;
+  .fancybox-slide>* {
+    padding: 0;
+    border-radius: 6px;
+    overflow: visible;
+  }
+  .fancybox-close-small {
+    background: url("../img/fancybox_close.svg") no-repeat 0 0;
+    background-size: 100% 100%;
+    width: 14px;
+    height: 14px;
+    top: -24px;
+    right: 0;
+    display: inline-block;
+    transition: 0.2s ease-out;
+    opacity: 0.6;
 
-    .my-fancybox-close {
-      position: absolute;
-      background: url("../img/fancybox_close.svg") no-repeat 0 0;
-      background-size: 100% 100%;
-      width: 14px;
-      height: 14px;
-      top: -24px;
-      right: 0;
-      display: inline-block;
-      transition: 0.2s ease-out;
-
-      &:hover{
-        background: url("../img/fancybox_close_h.svg") no-repeat 0 0;
-        background-size: 100% 100%;
-      }
+    &:hover{
+      opacity: 1;
+    }
+    &:after{
+      display: none;
     }
   }
-  &.fancybox-opened .fancybox-skin {
-    box-shadow: 0 0 62px #000;
-  }
+}
+.fancybox-is-open .fancybox-bg{
+  background: #000 !important;
+  opacity: 0.6 !important;
 }
 .hidden_form{
   display: none;
   max-width: 400px;
   min-width: 400px;
   width: 100%;
-  padding: 30px;
-  text-align: center;
+  padding: 30px !important;
+  text-align: center !important;
 
   .form_wrap_head{
     @include font_mix(3.0, 400, 3.0, #30242c);
