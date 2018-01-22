@@ -25,7 +25,7 @@
     margin: 0 auto 15px auto;
     width: 100%;
 
-    &.is_last{
+    &:last-of-type{
       margin-bottom: 15px;
     }
   }
@@ -57,7 +57,7 @@
     letter-spacing: normal;
     line-height: normal;
 
-    &.is_last{
+    &:last-of-type{
       margin: 0 2% 0 0;
     }
   }

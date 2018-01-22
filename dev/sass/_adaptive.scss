@@ -46,7 +46,7 @@
       margin: 0 auto 15px auto;
       width: 100%;
 
-      &.is_last{
+      &:last-of-type{
         margin: 0 0 15px 0;
       }
     }

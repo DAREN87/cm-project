@@ -97,7 +97,7 @@ if(isset($_GET['utm_content'])){
                         <li class="form_li">Составление плана лечения</li>
                         <li class="form_li">Составление сметы лечения</li>
                     </ul>
-                    <label class="form_label is_last">
+                    <label class="form_label">
                         <input type="tel" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
                     </label>
                     <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
@@ -144,7 +144,7 @@ if(isset($_GET['utm_content'])){
                     <p class="form_wrap_after_head">Оставьте заявку и узнайте все акции и скидки на имплантацию в нашей клинике</p>
                 </div>
                 <form action="./handlers/send-form-number.php" class="form_horizontal" method="post">
-                    <label class="form_label is_last">
+                    <label class="form_label">
                         <input type="tel" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
                     </label>
                     <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
@@ -253,7 +253,7 @@ if(isset($_GET['utm_content'])){
                         <label class="form_label">
                             <input type="tel" name="number" maxlength="18" class="form_input" required value="" placeholder="Введите Ваш телефон"/>
                         </label>
-                        <label class="form_label is_last">
+                        <label class="form_label">
                             <textarea name="msg" class="form_textarea" required placeholder="Чем мы можем вам помочь?"></textarea>
                         </label>
                         <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
@@ -292,7 +292,7 @@ if(isset($_GET['utm_content'])){
         <label class="form_label">
             <input type="text" name="name" class="form_input" required value="" placeholder="Ваше имя"/>
         </label>
-        <label class="form_label is_last">
+        <label class="form_label">
             <input type="tel" name="number" maxlength="18" class="form_input" required value="" placeholder="Ваш телефон"/>
         </label>
         <input type="hidden" name="utm_medium" class="input_hid" value="<?php echo($utm_medium);?>" />
