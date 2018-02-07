@@ -1,6 +1,12 @@
 .no_shadow{
   box-shadow: none;
 }
+.btn{
+  @include button_color(100%, 1.8);
+}
+.btn_link{
+  @include button_a(100%, 1.8);
+}
 .form_vertical{
   max-width: 300px;
   width: 100%;
@@ -17,7 +23,7 @@
     resize: none;
   }
   .form_button{
-    @include button_color(100%, 1.8);
+
   }
   .form_label{
     position: relative;
@@ -42,7 +48,7 @@
     @include input_m;
   }
   .form_button{
-    @include button_color(48.8%, 1.8);
+    width: 48.8%;
     display: inline-block;
     vertical-align: top;
     line-height: normal;
@@ -124,16 +130,14 @@
 
   .header_logo{
     float: left;
-    width: 129px;
 
     .logo_a{
       display: block;
-      width: 100%;
       text-decoration: none;
 
       .logo_img{
         display: block;
-        width: 100%;
+        max-width: 100%;
       }
     }
   }
@@ -144,7 +148,6 @@
   }
   .header_right{
     float: right;
-    box-sizing: border-box;
   }
   .header_right_info{
     display: inline-block;
@@ -683,7 +686,6 @@
       }
     }
     .banner_a{
-      @include button_a(100%, 1.8);
       max-width: 265px;
       margin: 0 auto;
     }

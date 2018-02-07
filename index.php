@@ -107,8 +107,8 @@ if(isset($_GET['utm_content'])){
                     <input type="hidden" name="utm_term" class="input_hid" value="<?php echo($utm_term);?>" />
                     <input type="hidden" name="position" class="input_hid" value="Бесплатный осмотр" />
                     <input type="hidden" name="mail" class="input_hid" value="" />
-                    <input type="submit" class="form_button" value="Бесплатный осмотр" />
-                    <button type="submit" class="form_button">Бесплатный осмотр</button>
+                    <input type="submit" class="form_button btn" value="Бесплатный осмотр" />
+                    <button type="submit" class="form_button btn">Бесплатный осмотр</button>
                     <p class="recall">Перезвоним через 5 секунд</p>
                 </form>
             </div>
@@ -154,7 +154,7 @@ if(isset($_GET['utm_content'])){
                     <input type="hidden" name="utm_term" class="input_hid" value="<?php echo($utm_term);?>" />
                     <input type="hidden" name="position" class="input_hid" value="Узнайте все акции и скидки на имплантацию" />
                     <input type="hidden" name="mail" class="input_hid" value="" />
-                    <button type="submit" class="form_button md">Получить скидку</button>
+                    <button type="submit" class="form_button btn md">Получить скидку</button>
                 </form>
                 <div class="form_wrap_stock">
                     <p class="stock_txt">До конца акции:</p>
@@ -263,7 +263,7 @@ if(isset($_GET['utm_content'])){
                         <input type="hidden" name="utm_term" class="input_hid" value="<?php echo($utm_term);?>" />
                         <input type="hidden" name="position" class="input_hid" value="Вопрос посетителя" />
                         <input type="hidden" name="mail" class="input_hid" value="" />
-                        <button type="submit" class="form_button">Задать вопрос</button>
+                        <button type="submit" class="form_button btn">Задать вопрос</button>
                     </form>
                 </div>
             </div>
@@ -302,7 +302,7 @@ if(isset($_GET['utm_content'])){
         <input type="hidden" name="utm_term" class="input_hid" value="<?php echo($utm_term);?>" />
         <input type="hidden" name="position" class="input_hid js_custom_position" value="" />
         <input type="hidden" name="mail" class="input_hid" value="" />
-        <button type="submit" class="form_button js_custom_btn">Оставить заявку</button>
+        <button type="submit" class="form_button btn js_custom_btn">Оставить заявку</button>
     </form>
 </div>
 <div class="popup_info" id="privacy">
