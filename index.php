@@ -315,7 +315,7 @@ if(isset($_GET['utm_content'])){
 <link rel="stylesheet" href="./js/libs/css/libs.min.css" property="stylesheet">
 <script src="//yastatic.net/browser-updater/v1/script.js"></script>
 <script src="./js/libs/jquery.min.js"></script>
-<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script src="./js/libs/jquery.fancybox.min.js"></script>
 <script src="./js/libs/jquery.bxslider.min.js"></script>
 <script src="./js/libs/jquery.inputmask.bundle.min.js"></script>
