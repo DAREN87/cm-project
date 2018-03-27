@@ -36,40 +36,7 @@
   color: $col;
 }
 // button
-@mixin button_color($width, $fontSize){
-  height: 59px;
-  padding: 0 15px;
-  width: $width;
-  border: none;
-  border-radius: 6px;
-  background-clip: padding-box;
-  box-shadow: inset 0 -4px 0 #dc7322, inset 0 -5px 2px #fea741;
-  background-image: linear-gradient(bottom, #f58936 0%, #ffba4e 100%);
-  color: #fff;
-  text-shadow: 0 1px 1px #e67f29;
-  font-family: $font_family_button;
-  font-size: ($fontSize * 10) + px;
-  line-height: ($fontSize * 10) + px;
-  font-size: $fontSize + rem;
-  line-height: $fontSize + rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  appearance: none;
-  transition: 0.2s ease-out;
-
-  &:hover{
-    background-image: linear-gradient(bottom, #f99643 0%, #ffba4e 100%);
-  }
-  &:active{
-    background-image: linear-gradient(bottom, #f58936 0%, #fba827 100%);
-  }
-}
-@mixin button_a($width, $fontSize){
+@mixin button($width, $fontSize){
   position: relative;
   padding: 10px 15px;
   width: $width;
@@ -92,7 +59,6 @@
   text-decoration: none;
   appearance: none;
   transition: 0.2s ease-out;
-  line-height: 59px;
 
   &:hover{
     background-image: linear-gradient(bottom, #f99643 0%, #ffba4e 100%);

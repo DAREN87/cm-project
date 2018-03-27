@@ -2,10 +2,7 @@
   box-shadow: none;
 }
 .btn{
-  @include button_color(100%, 1.8);
-}
-.btn_link{
-  @include button_a(100%, 1.8);
+  @include button(100%, 1.8);
 }
 .form_vertical{
   max-width: 300px;
@@ -69,6 +66,7 @@
   }
 }
 .custom-style{
+  font-family: inherit !important;
 
   .fancybox-slide>* {
     padding: 0;
