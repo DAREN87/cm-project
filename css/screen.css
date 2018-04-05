@@ -204,9 +204,10 @@ input.file.error { color: #e51414 !important; }
 .thank_you .banner .banner_thanks .banner_txt { font-size: 24px; line-height: 30px; font-size: 2.4rem; line-height: 3rem; font-weight: 400; color: #000000; }
 .thank_you .banner .banner_a { max-width: 265px; margin: 0 auto; }
 
+@media screen and (max-width: 1100px) { .custom-style .fancybox-slide > * { margin: 45px 0 10px 0; }
+  .custom-style .fancybox-close-small { width: 30px; height: 30px; top: -45px; right: 0; } }
 @media screen and (max-width: 980px) { html { font-size: 52.5%; }
   body { font-size: 1.4rem; }
-  .custom-style .fancybox-slide > * { margin: 40px 0 10px 0; }
   .popup_info { padding: 15px !important; }
   .thank_you .banner { padding: 50px 0; }
   .thank_you .banner .banner_thanks { text-align: center; margin-bottom: 40px; }

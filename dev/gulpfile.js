@@ -35,15 +35,24 @@
 
   //main.min.js
   gulp.task('scriptsMain', function() {
-    return gulp.src('./js/*.js')
+    return gulp.src(['./js/main.js'])
       .pipe(uncomment({removeEmptyLines: true}))
       .pipe(concat('main.js'))
       .pipe(gulp.dest('../js'))
       .pipe(concat('main.min.js'))
       .pipe(uglify())
       .pipe(size({title: 'size of main.min.js'}))
-      .pipe(gulp.dest('../js'))
+      .pipe(gulp.dest('./js'))
       .pipe(notify("main.min.js complete"));
+  });
+  //all.min.js
+  gulp.task('scriptsAllJs', function() {
+    return gulp.src(['./js/vendor/jquery/dist/jquery.min.js', './js/vendor/fancybox/dist/jquery.fancybox.min.js', './js/vendor/bxslider-4/dist/jquery.bxslider.min.js', './js/vendor/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js', './js/vendor/jquery-validation/dist/jquery.validate.min.js', './js/main.min.js'])
+      .pipe(uncomment({removeEmptyLines: true}))
+      .pipe(concat('all.min.js'))
+      .pipe(size({title: 'size of all.min.js'}))
+      .pipe(gulp.dest('../js'))
+      .pipe(notify("all.min.js complete"));
   });
 
   //bower
@@ -69,9 +78,9 @@
   //watch
   gulp.task('watch', function() {
     gulp.watch(['./sass/*.scss', './sass/**/*.scss'], ['compass', 'style']);
-    gulp.watch('./js/*.js', ['scriptsMain']);
+    gulp.watch('./js/*.js', ['scriptsMain', 'scriptsAllJs']);
   });
 
   //default
-  gulp.task('default', ['compass', 'style', 'scriptsMain', 'bowerJS',  'bowerCss', 'libsCss', 'watch']);
+  gulp.task('default', ['compass', 'style', 'scriptsMain', 'scriptsAllJs', 'bowerJS',  'bowerCss', 'libsCss', 'watch']);
 }(require));
