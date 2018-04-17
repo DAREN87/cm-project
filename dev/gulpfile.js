@@ -27,7 +27,7 @@
   gulp.task('style', ['compass'], function() {
     return gulp.src(['./js/vendor/normalize.css/normalize.css', '../css/screen.css'])
       .pipe(concat('style.min.css'))
-      .pipe(cssnano({autoprefixer: {browsers: ['last 50 versions','> 5%'], add: true}}))
+      .pipe(cssnano({reduceIdents: false, autoprefixer: {browsers: ['last 50 versions','> 5%'], add: true}}))
       .pipe(size({title: 'size of style.min.css'}))
       .pipe(gulp.dest('../css'))
       .pipe(notify("style.min.css complete"));
@@ -69,7 +69,7 @@
   gulp.task('libsCss', ['bowerCss'], function() {
     return gulp.src(['!../js/libs/css/libs.min.css', '../js/libs/css/*.css'])
       .pipe(concat('libs.min.css'))
-      .pipe(cssnano({autoprefixer: {browsers: ['last 50 versions','> 5%'], add: true}}))
+      .pipe(cssnano({reduceIdents: false, autoprefixer: {browsers: ['last 50 versions','> 5%'], add: true}}))
       .pipe(size({title: 'size of libs.min.css'}))
       .pipe(gulp.dest('../js/libs/css'))
       .pipe(notify("libs.min.css complete"));
@@ -78,7 +78,8 @@
   //watch
   gulp.task('watch', function() {
     gulp.watch(['./sass/*.scss', './sass/**/*.scss'], ['compass', 'style']);
-    gulp.watch('./js/*.js', ['scriptsMain', 'scriptsAllJs']);
+    gulp.watch('./js/main.js', ['scriptsMain']);
+    gulp.watch('./js/main.min.js', ['scriptsAllJs']);
   });
 
   //default
