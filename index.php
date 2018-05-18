@@ -286,8 +286,10 @@ if(isset($_GET['utm_content'])){
     </footer>
 </div>
 <div class="hidden_form" id="custom">
-    <h2 class="form_wrap_head js_custom_head">&nbsp;</h2>
-    <p class="form_wrap_p js_custom_txt">&nbsp;</p>
+    <div class="form_head_wrap">
+        <h2 class="form_head js_custom_head">&nbsp;</h2>
+        <p class="form_after_head js_custom_txt">&nbsp;</p>
+    </div>
     <form action="./handlers/send-form.php" class="form_vertical" method="post">
         <label class="form_label">
             <input type="text" name="name" class="form_input" required value="" placeholder="Ваше имя"/>

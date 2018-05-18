@@ -75,10 +75,10 @@ input.file.error { color: #e51414 !important; }
 .fancybox-is-open .fancybox-bg { background: #000 !important; opacity: 0.6 !important; }
 
 .hidden_form { display: none; max-width: 400px; min-width: 400px; width: 100%; padding: 30px !important; text-align: center !important; }
-.hidden_form .form_wrap_head { font-size: 30px; line-height: 30px; font-size: 3rem; line-height: 3rem; font-weight: 400; color: #30242c; margin-bottom: 20px; }
-.hidden_form .form_wrap_p { font-size: 18px; line-height: 20px; font-size: 1.8rem; line-height: 2rem; font-weight: 400; color: #30242c; margin-bottom: 25px; }
-.hidden_form.hidden { display: none; }
-.hidden_form.hidden + form { margin-top: 20px; }
+.hidden_form .form_head_wrap { margin-bottom: 25px; }
+.hidden_form .form_head_wrap .form_head { font-size: 30px; line-height: 30px; font-size: 3rem; line-height: 3rem; font-weight: 400; color: #091337; }
+.hidden_form .form_head_wrap .form_after_head { font-size: 16px; line-height: 20px; font-size: 1.6rem; line-height: 2rem; font-weight: 400; color: #6c738a; margin-top: 10px; }
+.hidden_form .form_head_wrap .form_after_head.hidden { display: none; }
 .hidden_form .form_vertical { max-width: 100%; }
 
 .header { padding: 15px 0; }

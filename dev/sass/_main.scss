@@ -105,19 +105,19 @@
   padding: 30px !important;
   text-align: center !important;
 
-  .form_wrap_head{
-    @include font_mix(3.0, 400, 3.0, #30242c);
-    margin-bottom: 20px;
-  }
-  .form_wrap_p{
-    @include font_mix(1.8, 400, 2.0, #30242c);
+  .form_head_wrap{
     margin-bottom: 25px;
-  }
-  &.hidden{
-    display: none;
 
-    &+form{
-      margin-top: 20px;
+    .form_head{
+      @include font_mix(3.0, 400, 3.0, #091337);
+    }
+    .form_after_head{
+      @include font_mix(1.6, 400, 2.0, #6c738a);
+      margin-top: 10px;
+
+      &.hidden{
+        display: none;
+      }
     }
   }
   .form_vertical{
