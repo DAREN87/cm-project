@@ -81,7 +81,7 @@ input.file.error { color: #e51414 !important; }
 .hidden_form .form_head_wrap .form_after_head.hidden { display: none; }
 .hidden_form .form_vertical { max-width: 100%; }
 
-.header { padding: 15px 0; }
+.header { padding: 20px 0; }
 .header .header_logo { float: left; }
 .header .header_logo .logo_a { display: block; text-decoration: none; }
 .header .header_logo .logo_a .logo_img { display: block; max-width: 100%; }
