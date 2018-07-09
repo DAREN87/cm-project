@@ -136,6 +136,57 @@ if(isset($_GET['utm_content'])){
             </div>
         </div>
     </div>
+    <div class="wrapper team" id="block_10">
+        <div class="inner">
+            <div class="default_head_wrap">
+                <h2 class="default_head">Команда квалифицированных мастеров</h2>
+            </div>
+        </div>
+        <div class="slider_wrap">
+            <div class="slider" id="team_slider">
+                <div class="team_item">
+                    <img src="./img/team_item_img_1.png" alt="" class="item_img">
+                    <div class="item_info">
+                        <p class="info_name">Василий Уткин</p>
+                        <p class="info_about">Стаж 3 года<br>
+                            Специалист в области зточки
+                            ножниц</p>
+                    </div>
+                </div>
+                <div class="team_item">
+                    <img src="./img/team_item_img_1.png" alt="" class="item_img">
+                    <div class="item_info">
+                        <p class="info_name">Василий Уткин</p>
+                        <p class="info_about">Стаж 3 года<br>
+                            Специалист в области зточки
+                            ножниц</p>
+                    </div>
+                </div>
+                <div class="team_item">
+                    <img src="./img/team_item_img_1.png" alt="" class="item_img">
+                    <div class="item_info">
+                        <p class="info_name">Василий Уткин</p>
+                        <p class="info_about">Стаж 3 года<br>
+                            Специалист в области зточки
+                            ножниц</p>
+                    </div>
+                </div>
+                <div class="team_item">
+                    <img src="./img/team_item_img_1.png" alt="" class="item_img">
+                    <div class="item_info">
+                        <p class="info_name">Василий Уткин</p>
+                        <p class="info_about">Стаж 3 года<br>
+                            Специалист в области зточки
+                            ножниц</p>
+                    </div>
+                </div>
+            </div>
+            <div class="control_bx">
+                <span class="controls" id="team_slider_prev"></span>
+                <span class="controls" id="team_slider_next"></span>
+            </div>
+        </div>
+    </div>
     <div class="wrapper horizontal_form" id="block_7">
         <div class="inner">
             <div class="horizontal_form_wrap">
@@ -164,75 +215,6 @@ if(isset($_GET['utm_content'])){
                     <p class="bottom_info_txt">Или звоните нам прямо сейчас и запишитесь на бесплатную консультацию!</p>
                     <a href="tel:88001234567" class="bottom_info_phone">8 (800) 123-45-67</a>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper dentists" id="block_34">
-        <div class="inner">
-            <h2 class="default_head"><span class="yellow">Опытные стоматологи</span> помогут вам обрести<br>
-                сияющую улыбку</h2>
-        </div>
-        <div class="dentists_slider_wrap">
-            <ul class="dentists_slider" id="dentists_slider">
-                <li class="dentists_item clearfix">
-                    <img src="./img/dentists_img_1.jpg" alt="" class="item_img">
-                    <div class="item_info">
-                        <p class="info_name">Имя</p>
-                        <p class="info_txt"><strong>Антропова Татьяна Викторовна</strong></p>
-                        <p class="info_name">Должность</p>
-                        <p class="info_txt">Терапевтическая стоматология</p>
-                        <p class="info_name">Опыт</p>
-                        <p class="info_txt">10 лет</p>
-                    </div>
-                </li>
-                <li class="dentists_item clearfix">
-                    <img src="./img/dentists_img_1.jpg" alt="" class="item_img">
-                    <div class="item_info">
-                        <p class="info_name">Имя</p>
-                        <p class="info_txt"><strong>Антропова Татьяна Викторовна</strong></p>
-                        <p class="info_name">Должность</p>
-                        <p class="info_txt">Терапевтическая стоматология</p>
-                        <p class="info_name">Опыт</p>
-                        <p class="info_txt">10 лет</p>
-                    </div>
-                </li>
-                <li class="dentists_item clearfix">
-                    <img src="./img/dentists_img_1.jpg" alt="" class="item_img">
-                    <div class="item_info">
-                        <p class="info_name">Имя</p>
-                        <p class="info_txt"><strong>Антропова Татьяна Викторовна</strong></p>
-                        <p class="info_name">Должность</p>
-                        <p class="info_txt">Терапевтическая стоматология</p>
-                        <p class="info_name">Опыт</p>
-                        <p class="info_txt">10 лет</p>
-                    </div>
-                </li>
-                <li class="dentists_item clearfix">
-                    <img src="./img/dentists_img_1.jpg" alt="" class="item_img">
-                    <div class="item_info">
-                        <p class="info_name">Имя</p>
-                        <p class="info_txt"><strong>Антропова Татьяна Викторовна</strong></p>
-                        <p class="info_name">Должность</p>
-                        <p class="info_txt">Терапевтическая стоматология</p>
-                        <p class="info_name">Опыт</p>
-                        <p class="info_txt">10 лет</p>
-                    </div>
-                </li>
-                <li class="dentists_item clearfix">
-                    <img src="./img/dentists_img_1.jpg" alt="" class="item_img">
-                    <div class="item_info">
-                        <p class="info_name">Имя</p>
-                        <p class="info_txt"><strong>Антропова Татьяна Викторовна</strong></p>
-                        <p class="info_name">Должность</p>
-                        <p class="info_txt">Терапевтическая стоматология</p>
-                        <p class="info_name">Опыт</p>
-                        <p class="info_txt">10 лет</p>
-                    </div>
-                </li>
-            </ul>
-            <div class="control_bx">
-                <span class="controls" id="dentists-prev"></span>
-                <span class="controls" id="dentists-next"></span>
             </div>
         </div>
     </div>

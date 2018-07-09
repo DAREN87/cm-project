@@ -146,34 +146,21 @@ input.file.error { color: #e51414 !important; }
 .horizontal_form .horizontal_form_wrap .form_wrap_stock { text-align: center; padding: 0 10px; }
 .horizontal_form .horizontal_form_wrap .form_wrap_stock .stock_txt { font-size: 20px; line-height: 20px; font-size: 2rem; line-height: 2rem; font-weight: 600; color: #313131; display: inline-block; vertical-align: middle; margin-right: 20px; }
 
-.countbox { display: inline-block; vertical-align: middle; }
-.countbox .countbox-num { float: left; width: 41px; text-align: center; }
-.countbox .countbox-space { float: left; width: 15px; height: 1px; }
-.countbox .countbox-days1, .countbox .countbox-hours1, .countbox .countbox-mins1, .countbox .countbox-secs1, .countbox .countbox-days2, .countbox .countbox-hours2, .countbox .countbox-mins2, .countbox .countbox-secs2 { width: 50%; font-size: 30px; line-height: 36px; font-size: 3rem; line-height: 3.6rem; font-weight: 700; color: #313131; text-align: center; }
-.countbox .countbox-days-text, .countbox .countbox-hours-text, .countbox .countbox-mins-text, .countbox .countbox-secs-text { left: 0; width: 100%; text-align: center; font-size: 12px; line-height: 12px; font-size: 1.2rem; line-height: 1.2rem; font-weight: 400; color: #585858; }
+.slider_wrap { position: relative; max-width: 1050px; padding: 0 45px; margin: 0 auto; }
+.slider_wrap .slider { width: 100%; }
+.slider_wrap .bx-wrapper { box-shadow: none; border: none; background: none; margin: 0 auto; }
+.slider_wrap .control_bx .controls a { position: absolute; top: 50%; margin-top: -15px; width: 17px; height: 30px; outline: 0; z-index: 2; cursor: pointer; text-decoration: none; text-indent: -9999px; }
+.slider_wrap .control_bx .controls a.bx-prev { left: 0; background: url("../img/controls.png") no-repeat 0 0; background-size: 200% 200%; }
+.slider_wrap .control_bx .controls a.bx-prev:hover { background-position: 0 100%; }
+.slider_wrap .control_bx .controls a.bx-next { right: 0; background: url("../img/controls.png") no-repeat 100% 0; background-size: 200% 200%; }
+.slider_wrap .control_bx .controls a.bx-next:hover { background-position: 100% 100%; }
 
-.dentists { padding: 50px 0; }
-.dentists .dentists_slider_wrap { box-sizing: border-box; position: relative; max-width: 1140px; padding: 0 90px; margin: 0 auto; }
-.dentists .dentists_slider_wrap .dentists_slider { width: 100%; }
-.dentists .dentists_item { border-radius: 8px; background-clip: padding-box; box-shadow: inset 0 -3px 0 #d5d5d5; background: #f9f9f9 url("../img/dentists_info_icon.png") no-repeat bottom right; }
-.dentists .dentists_item .item_img { width: 100%; border-radius: 8px 8px 0 0; }
-.dentists .dentists_item .item_info { padding: 15px 20px; }
-.dentists .dentists_item .item_info .info_name { font-size: 14px; line-height: 14px; font-size: 1.4rem; line-height: 1.4rem; font-weight: 400; color: #b5b5b5; margin-bottom: 7px; }
-.dentists .dentists_item .item_info .info_txt { font-size: 16px; line-height: 16px; font-size: 1.6rem; line-height: 1.6rem; font-weight: 400; color: #000000; margin-bottom: 15px; }
-.dentists .dentists_item .item_info .info_txt strong { font-weight: 600; }
-.dentists .dentists_item .item_info .info_txt:last-of-type { margin-bottom: 0; }
-.dentists .controls a { position: absolute; top: 50%; margin-top: -30px; width: 32px; height: 60px; outline: 0; z-index: 14; cursor: pointer; text-decoration: none; text-indent: -9999px; }
-.dentists .controls a.bx-prev { left: 0; background: url("../img/controls.png") no-repeat 0 0; }
-.dentists .controls a.bx-prev:hover { background-position: 0 -60px; }
-.dentists .controls a.bx-prev.disabled { display: none; }
-.dentists .controls a.bx-next { right: 0; background: url("../img/controls.png") no-repeat -32px 0; }
-.dentists .controls a.bx-next:hover { background-position: -32px -60px; }
-.dentists .controls a.bx-next.disabled { display: none; }
-.dentists .bx-wrapper { margin: 0 auto 50px; }
-.dentists .bx-wrapper .bx-pager { text-align: center; color: #666; bottom: -50px; }
-.dentists .bx-wrapper .bx-pager .bx-pager-item { display: inline-block; }
-.dentists .bx-wrapper .bx-pager.bx-default-pager a { text-indent: -9999px; display: block; width: 8px; height: 8px; border-radius: 50%; background-clip: padding-box; background-color: #f19b59; box-shadow: 0 0 0 3px #fff; margin: 0 6px; outline: 0; }
-.dentists .bx-wrapper .bx-pager.bx-default-pager a:hover, .dentists .bx-wrapper .bx-pager.bx-default-pager a.active { background: #f19b59; box-shadow: 0 0 0 2px #fff, 0 0 0 3px #f19b59; }
+.team { padding: 60px 0; }
+.team .team_item .item_img { display: block; margin: 0 auto -30px; max-width: 75%; }
+.team .team_item .item_info { background-color: #f9f9f9; padding: 60px 30px 30px; }
+.team .team_item .item_info .info_name { font-size: 18px; line-height: 22px; font-size: 1.8rem; line-height: 2.2rem; font-weight: 500; color: #000000; margin-bottom: 35px; position: relative; }
+.team .team_item .item_info .info_name:after { content: ''; display: block; width: 38px; height: 2px; background-color: #ff9d1d; position: absolute; left: 0; bottom: -20px; }
+.team .team_item .item_info .info_about { font-size: 16px; line-height: 24px; font-size: 1.6rem; line-height: 2.4rem; font-weight: 400; color: #000000; }
 
 .contact .contact_inner { padding: 50px 0; }
 .contact .contact_wrap .contact_a { display: inline-block; vertical-align: middle; font-size: 30px; line-height: 30px; font-size: 3rem; line-height: 3rem; font-weight: 400; color: #313131; padding: 0 0 0 30px; margin-right: 50px; }
