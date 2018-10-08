@@ -99,7 +99,7 @@
 }
 .hidden_form{
   display: none;
-  max-width: 400px;
+  max-width: 400px !important;
   min-width: 400px;
   width: 100%;
   padding: 30px !important;
@@ -707,7 +707,7 @@
 }
 .popup_info{
   display: none;
-  max-width: 960px;
+  max-width: 960px !important;
   width: 100%;
   padding: 30px !important;
 
