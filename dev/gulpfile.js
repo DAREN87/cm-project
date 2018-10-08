@@ -47,7 +47,7 @@
   });
   //all.min.js
   gulp.task('scriptsAllJs', function() {
-    return gulp.src(['./js/vendor/jquery/dist/jquery.min.js', './js/vendor/fancybox/dist/jquery.fancybox.min.js', './js/vendor/bxslider-4/dist/jquery.bxslider.min.js', './js/vendor/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js', './js/vendor/jquery-validation/dist/jquery.validate.min.js', './js/main.min.js'])
+    return gulp.src(['./js/vendor/jquery/dist/jquery.min.js', './js/vendor/fancybox/dist/jquery.fancybox.min.js', './js/vendor/slick-carousel/slick/slick.min.js', './js/vendor/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js', './js/vendor/jquery-validation/dist/jquery.validate.min.js', './js/main.min.js'])
       .pipe(uncomment({removeEmptyLines: true}))
       .pipe(concat('all.min.js'))
       .pipe(size({title: 'size of all.min.js'}))

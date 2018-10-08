@@ -136,54 +136,36 @@ if(isset($_GET['utm_content'])){
             </div>
         </div>
     </div>
-    <div class="wrapper team" id="block_10">
+    <div class="wrapper reviews" id="block_9">
         <div class="inner">
             <div class="default_head_wrap">
-                <h2 class="default_head">Команда квалифицированных мастеров</h2>
+                <h2 class="default_head">"Во франшизе, нравится ВСЁ..." -<br>
+                    Анастасия Екимова</h2>
+                <p class="default_after_head">Посмотрите на успехи наших франчайзи</p>
             </div>
-        </div>
-        <div class="slider_wrap">
-            <div class="slider" id="team_slider">
-                <div class="team_item">
-                    <img src="./img/team_item_img_1.png" alt="" class="item_img">
-                    <div class="item_info">
-                        <p class="info_name">Василий Уткин</p>
-                        <p class="info_about">Стаж 3 года<br>
-                            Специалист в области зточки
-                            ножниц</p>
+            <div class="reviews_wrap">
+                <div class="reviews_slider">
+                    <div class="slider_item">
+                        <img src="./img/reviews_img_1.jpg" alt="" class="item_img">
+                        <p class="item_name">Анастасия Екимова, Калининград</p>
+                        <p class="item_info">Во франшизе, нравится ВСЁ, особенно поддержка и коллектив! В Новосибирске я познакомилась
+                            почти со всеми. Очень ценю, что не было ни одной нерешенной ситуации ни одного неотвеченного вопроса. Помогают во всём!</p>
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/reviews_img_2.jpg" alt="" class="item_img">
+                        <p class="item_name">Юлия Николаева, Волжский</p>
+                        <p class="item_info">Мы с супругом думали над открытием своего дела. У нас не было опыта, поэтому мы решили приобрести франшизу. Я наткнулась на франшизу школы «Рождение» и поняла, что ничего подобного у нас в городе нет. Внимательно рассмотрела сайт, и информация на нем заинтересовала ещё более. Посмотрела для сравнения другие школы, но «Рождение» – школа с большим стажем работы + приятный и терпеливый менеджер. В общем, мы решили открыть филиал именно этой школы в городе.</p>
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/reviews_img_3.jpg" alt="" class="item_img">
+                        <p class="item_name">Оксана Некрасова, Чита</p>
+                        <p class="item_info">С расширением нашей семьи не так давно мы рассматривали вариант открытия детской игровой комнаты. Но обратили внимание на проект школы для будущих родителей. Многое из того, что предлагает школа, отзывается в душе и удовлетворяет тем потребностям и желаниям, которые хотелось бы реализовать. Уже с открытием данной деятельности удалось оценить, насколько удобно оказаться частью большой и серьезной команды с продуманным планом развития, и в то же время есть возможность использовать личные инструменты и качества для реализации целей и увеличения собственной прибыли.</p>
                     </div>
                 </div>
-                <div class="team_item">
-                    <img src="./img/team_item_img_1.png" alt="" class="item_img">
-                    <div class="item_info">
-                        <p class="info_name">Василий Уткин</p>
-                        <p class="info_about">Стаж 3 года<br>
-                            Специалист в области зточки
-                            ножниц</p>
-                    </div>
+                <div class="slider_arrows">
+                    <div class="arrow_item prev reviews_slider_prev">prev</div>
+                    <div class="arrow_item next reviews_slider_next">next</div>
                 </div>
-                <div class="team_item">
-                    <img src="./img/team_item_img_1.png" alt="" class="item_img">
-                    <div class="item_info">
-                        <p class="info_name">Василий Уткин</p>
-                        <p class="info_about">Стаж 3 года<br>
-                            Специалист в области зточки
-                            ножниц</p>
-                    </div>
-                </div>
-                <div class="team_item">
-                    <img src="./img/team_item_img_1.png" alt="" class="item_img">
-                    <div class="item_info">
-                        <p class="info_name">Василий Уткин</p>
-                        <p class="info_about">Стаж 3 года<br>
-                            Специалист в области зточки
-                            ножниц</p>
-                    </div>
-                </div>
-            </div>
-            <div class="control_bx">
-                <span class="controls" id="team_slider_prev"></span>
-                <span class="controls" id="team_slider_next"></span>
             </div>
         </div>
     </div>

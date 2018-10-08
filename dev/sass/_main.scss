@@ -375,6 +375,110 @@
     }
   }
 }
+
+.reviews{
+  padding: 60px 0;
+  background: url("../img/reviews_bg.jpg") no-repeat center center;
+  background-size: cover;
+
+  .reviews_wrap{
+    position: relative;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 45px;
+
+    .reviews_slider{
+      max-width: 790px;
+      margin: 0 auto;
+
+      .slider_item{
+        text-align: center;
+        outline: none;
+
+        .item_img{
+          display: inline-block;
+          border-radius: 50%;
+          margin-bottom: 35px;
+          max-width: 50%;
+        }
+        .item_name{
+          @include font_mix(1.8, 700, 2.6, #000011);
+        }
+        .item_info{
+          @include font_mix(1.6, 500, 2.6, #000011);
+          margin-top: 20px;
+        }
+      }
+    }
+    .slick-dotted.slick-slider {
+      margin-bottom: 65px;
+    }
+    .slick-dots{
+      bottom: -65px;
+
+      li{
+
+        button{
+          width: 12px;
+          height: 12px;
+          padding: 0;
+          border: none;
+          border-radius: 50%;
+          color: transparent;
+          background-color: #ebddf0;
+          transition: 0.2s ease-out;
+
+          &:before{
+            display: none;
+          }
+          &:hover{
+            background-color: #87a5cf;
+          }
+        }
+        &.slick-active{
+
+          button{
+            background-color: #87a5cf;
+          }
+        }
+      }
+    }
+  }
+  .slider_arrows{
+
+    .arrow_item{
+      text-indent: -9999px;
+      font-size: 0;
+      line-height: 0;
+      width: 23px;
+      height: 42px;
+      background: url("../img/arrows.png") no-repeat 0 0;
+      background-size: 200% 200%;
+      cursor: pointer;
+      position: absolute;
+      top: 80px;
+      //top: 50%;
+      //margin-top: -21px;
+
+      &.prev{
+        background-position: 0 0;
+        left: 0;
+
+        &:hover{
+          background-position: 0 100%;
+        }
+      }
+      &.next{
+        background-position: 100% 0;
+        right: 0;
+
+        &:hover{
+          background-position: 100% 100%;
+        }
+      }
+    }
+  }
+}
 .horizontal_form{
   padding: 50px 0;
 

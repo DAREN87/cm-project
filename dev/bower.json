@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "jquery": "^2.2.4",
-    "bxslider-4": "^4.2.5",
+    "slick-carousel": "^1.8.1",
     "fancybox": "^3.1.20",
     "jquery.inputmask": "^3.2.7",
     "jquery-validation": "jquery.validate#^1.13.0"
@@ -31,10 +31,12 @@
     "jquery": {
       "main": "dist/jquery.min.js"
     },
-    "bxslider-4": {
+    "slick-carousel": {
       "main": [
-        "dist/jquery.bxslider.min.js",
-        "dist/jquery.bxslider.css"
+        "slick/slick.min.js",
+        "slick/slick.css",
+        "slick/slick-theme.css",
+        "slick/ajax-loader.gif"
       ]
     },
     "fancybox": {
