@@ -75,18 +75,20 @@
     margin: 10px 0;
   }
   .fancybox-close-small {
-    background: url("../img/fancybox_close.svg") no-repeat 0 0;
-    background-size: 100% 100%;
-    width: 14px;
-    height: 14px;
-    top: -24px;
-    right: 0;
+    background: #7497d3 url("../img/fancybox_close.svg") no-repeat center center;
+    background-size: 35% 35%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0 !important;
+    top: -15px !important;
+    right: -15px !important;
+    opacity: 1 !important;
     display: inline-block;
     transition: 0.2s ease-out;
-    opacity: 0.6;
 
     &:hover{
-      opacity: 1;
+      background-color: #607fb2;
     }
     &:after{
       display: none;
