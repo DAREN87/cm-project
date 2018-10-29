@@ -326,29 +326,25 @@
     }
   }
 }
-.default_head{
-  @include font_mix(4.0, 700, 4.0, #313131);
-  margin-bottom: 40px;
 
-  &.md, .md{
-    @include font_mix(3.4, 700, 4.0, #313131);
+.default_head_wrap{
+  margin-bottom: 65px;
+
+  .default_head{
+    @include font_mix(4.8, 600, 5.2, #323131);
   }
-  .sm{
-    @include font_mix(2.2, 700, 3.6, #313131);
+  .after_default_head{
+    @include font_mix(2.4, 400, 2.8, #323131);
+    margin-top: 15px;
   }
-  &.white, .white{
-    color: #fff;
-  }
-  .yellow{
-    color: #ed822f;
-  }
-  .red{
-    color: #ff0000;
-  }
-  .green_bg{
-    border-radius: 8px;
-    background-color: #076d7a;
-    padding: 0 10px;
+  &.white{
+
+    .default_head{
+      color: #fff;
+    }
+    .after_default_head{
+      color: #fff;
+    }
   }
 }
 .triggers{
