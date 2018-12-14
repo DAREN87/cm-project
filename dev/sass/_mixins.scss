@@ -35,6 +35,12 @@
   font-weight: $weight;
   color: $col;
 }
+@mixin font_mix_adaptive($size:1.6, $line_height:1.6){
+  font-size:   ($size * 10) + px;
+  line-height: ($line_height * 10) + px;
+  font-size:   $size + rem;
+  line-height: $line_height + rem;
+}
 // button
 @mixin button($width, $fontSize){
   position: relative;

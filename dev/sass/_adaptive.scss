@@ -36,10 +36,10 @@
         margin-bottom: 40px;
 
         .banner_h1{
-          @include font_mix(3.5, 400, 4.0, #000000);
+          @include font_mix_adaptive(3.5, 4.0);
         }
         .banner_txt{
-          @include font_mix(2.0, 400, 2.4, #000000);
+          @include font_mix_adaptive(2.0, 2.4);
         }
       }
     }
@@ -78,10 +78,10 @@
         margin-bottom: 30px;
 
         .banner_h1{
-          @include font_mix(3.0, 400, 3.4, #000000);
+          @include font_mix_adaptive(3.0, 3.4);
         }
         .banner_txt{
-          @include font_mix(1.8, 400, 2.0, #000000);
+          @include font_mix_adaptive(1.8, 2.0);
         }
       }
     }
