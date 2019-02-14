@@ -69,7 +69,7 @@
   gulp.task('libsCss', ['bowerCss'], function() {
     return gulp.src(['!../js/libs/css/libs.min.css', '../js/libs/css/*.css'])
       .pipe(concat('libs.min.css'))
-      .pipe(cssnano({reduceIdents: false, autoprefixer: {browsers: ['last 50 versions','> 5%'], add: true}}))
+      .pipe(cssnano({reduceIdents: false, autoprefixer: {browsers: ['last 50 versions','> 5%'], add: true}, zindex: false}))
       .pipe(size({title: 'size of libs.min.css'}))
       .pipe(gulp.dest('../js/libs/css'))
       .pipe(notify("libs.min.css complete"));
