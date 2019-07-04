@@ -19,8 +19,6 @@
 }
 // Convert mixins
 @mixin font_mix_family($family, $size:1.6, $weight:normal, $line_height:1.6, $col:#fff){
-  font-size:   ($size * 10) + px;
-  line-height: ($line_height * 10) + px;
   font-size:   $size + rem;
   line-height: $line_height + rem;
   font-weight: $weight;
@@ -28,16 +26,12 @@
   color: $col;
 }
 @mixin font_mix($size:1.6, $weight:normal, $line_height:1.6, $col:#fff){
-  font-size:   ($size * 10) + px;
-  line-height: ($line_height * 10) + px;
   font-size:   $size + rem;
   line-height: $line_height + rem;
   font-weight: $weight;
   color: $col;
 }
 @mixin font_mix_adaptive($size:1.6, $line_height:1.6){
-  font-size:   ($size * 10) + px;
-  line-height: ($line_height * 10) + px;
   font-size:   $size + rem;
   line-height: $line_height + rem;
 }
@@ -54,7 +48,6 @@
   color: #fff;
   text-shadow: 0 1px 1px #e67f29;
   font-family: $font_family_button;
-  font-size: ($fontSize * 10) + px;
   font-size: $fontSize + rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -84,7 +77,7 @@
   box-sizing: border-box;
   color: #8b8b8b;
   font-family: $font_family_input;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 600;
   @include placeholder-color(#8b8b8b);
   appearance: none;
