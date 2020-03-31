@@ -17,8 +17,5 @@
     "gulp-uglify": "^3.0.2",
     "gulp-uncomment": "^0.3.0",
     "main-bower-files": "^2.13.3"
-  },
-  "dependencies": {
-    "npm": "^5.6.0"
   }
 }
