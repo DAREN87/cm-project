@@ -1,6 +1,6 @@
 {
   "name": "inputmask",
-  "version": "4.0.8",
+  "version": "5.0.3",
   "main": [
     "./index.js",
     "./css/inputmask.css"
@@ -18,8 +18,11 @@
   "ignore": [
     "**/*",
     "!index.js",
+    "!bundle.js",
+    "!bundle.jquery.js",
     "!css/**/*",
-    "!dist/**/*"
+    "!dist/**/*",
+    "!lib/**/*"
   ],
   "dependencies": {
     "jquery": ">=1.7"
@@ -30,13 +33,13 @@
     }
   ],
   "homepage": "http://robinherbots.github.io/Inputmask",
-  "_release": "4.0.8",
+  "_release": "5.0.3",
   "_resolution": {
     "type": "version",
-    "tag": "4.0.8",
-    "commit": "2822a24f69b757e71f4b89cda2dac72d90fc6e46"
+    "tag": "5.0.3",
+    "commit": "68ede485ec897a3afe98a3c61cf7fccb01215285"
   },
   "_source": "https://github.com/RobinHerbots/jquery.inputmask.git",
-  "_target": "^4.0.0",
+  "_target": "^5.0.0",
   "_originalSource": "jquery.inputmask"
 }
